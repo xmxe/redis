@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.TimeUnit;
 /**
  * @ClassName:  RedissonUtils   
- * @Description:(redisson工具类)   
+ * @Description: (redisson工具类)
  */
 @Component
 public class RedissonUtil {

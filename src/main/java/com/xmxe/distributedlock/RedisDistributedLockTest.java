@@ -10,9 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-/**
- * RedisTemplate分布式锁演变、Redission分布式锁实现！(https://mp.weixin.qq.com/s/42AOUuTsYzt4nj69sqK0RA)
- */
+
 public class RedisDistributedLockTest {
     
     @Autowired
@@ -58,6 +56,9 @@ public class RedisDistributedLockTest {
         }
     }
 
+    /**
+     * 秒杀
+     */
     public static void seckill() {
         JedisPool pool = null;
         JedisPoolConfig config = new JedisPoolConfig();

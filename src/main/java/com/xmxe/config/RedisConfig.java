@@ -24,6 +24,10 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 @EnableCaching//开启缓存
 public class RedisConfig extends CachingConfigurerSupport{
 
+    /**
+     * 创建密钥
+     * @return
+     */
     @Bean
     public KeyGenerator keyGenerator() {
      /*   return new KeyGenerator() {
@@ -72,8 +76,6 @@ public class RedisConfig extends CachingConfigurerSupport{
      * 可以添加多个监听不同话题的redis监听器，只需要把消息监听器和相应的消息订阅处理器绑定，该消息监听器
      * 通过反射技术调用消息订阅处理器的相关方法进行一些业务处理
      * @param connectionFactory 连接工厂
-     *
-     *
      */
     @Bean
     RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory){
@@ -94,7 +96,9 @@ public class RedisConfig extends CachingConfigurerSupport{
         container.setTopicSerializer(seria);
         return container;
     }
-
+    /**
+     * 发布订阅模式在两个角色中间是一个中间角色来过渡的，发布者并不直接与订阅者产生交互
+     */
     @Bean
     MessageListenerAdapter messageListener() {
         return new MessageListenerAdapter(new MessageListener(){
@@ -107,3 +111,4 @@ public class RedisConfig extends CachingConfigurerSupport{
     }
 
 }
+

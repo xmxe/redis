@@ -13,6 +13,22 @@ import java.util.UUID;
 
 public class RedisLockUtil {
     private static Logger log = LoggerFactory.getLogger(RedisLockUtil.class);
+
+    /**
+     * 鉴权信息 key 前缀
+     */
+    public static final String AUTH_REDIS_PREFIX = "UNIF_AUTH_";
+
+    /**
+     * 缓存信息 key 前缀
+     */
+    public static final String CACHE_REDIS_PREFIX = "UNIF_CACHE_";
+
+    /**
+     * 分布式锁信息 key 前缀
+     */
+    public static final String LOCK_REDIS_PREFIX = "UNIF_LOCK_";
+
     /**
      * 默认轮休获取锁间隔时间， 单位：毫秒
      */
@@ -132,7 +148,7 @@ public class RedisLockUtil {
         try {
             RedisCallback<Boolean> callback = (connection) -> connection.eval(
                     UNLOCK_LUA.getBytes(StandardCharsets.UTF_8), ReturnType.BOOLEAN, 1,
-                    (com.xmxe.distributedlock.lock_demo1.RedisPrefix.LOCK_REDIS_PREFIX + key).getBytes(StandardCharsets.UTF_8),
+                    (LOCK_REDIS_PREFIX + key).getBytes(StandardCharsets.UTF_8),
                     lockId.getBytes(StandardCharsets.UTF_8));
             redisTemplate.execute(callback);
         } catch (Exception e) {
@@ -149,7 +165,7 @@ public class RedisLockUtil {
     public static String get(RedisTemplate<?, ?> redisTemplate, String key) {
         try {
             RedisCallback<String> callback = (connection) -> {
-                byte[] bytes = connection.get((com.xmxe.distributedlock.lock_demo1.RedisPrefix.LOCK_REDIS_PREFIX + key).getBytes(StandardCharsets.UTF_8));
+                byte[] bytes = connection.get((LOCK_REDIS_PREFIX + key).getBytes(StandardCharsets.UTF_8));
                 if (bytes != null) {
                     return new String(bytes, StandardCharsets.UTF_8);
                 }
@@ -164,7 +180,7 @@ public class RedisLockUtil {
 
     private static boolean tryLock(RedisTemplate<?, ?> redisTemplate, String key, long expire, String lockId) {
         RedisCallback<Boolean> callback = (connection) -> connection.set(
-                (com.xmxe.distributedlock.lock_demo1.RedisPrefix.LOCK_REDIS_PREFIX + key).getBytes(StandardCharsets.UTF_8),
+                (LOCK_REDIS_PREFIX + key).getBytes(StandardCharsets.UTF_8),
                 lockId.getBytes(StandardCharsets.UTF_8), Expiration.seconds(expire),
                 RedisStringCommands.SetOption.SET_IF_ABSENT);
         return (Boolean) redisTemplate.execute(callback);

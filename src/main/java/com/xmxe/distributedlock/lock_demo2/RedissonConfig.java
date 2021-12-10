@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  
 /**
  * @ClassName:  RedissonConfig   
- * @Description:(双端检索单例工厂模式--》创建 redissonClient 交由 spring IOC管理)   
+ * @Description: (双端检索单例工厂模式--》创建 redissonClient 交由 spring IOC管理)
  */
 @Configuration
 public class RedissonConfig {
