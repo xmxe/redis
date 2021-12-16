@@ -67,6 +67,9 @@
 - [RedisTemplate分布式锁演变、Redission分布式锁实现](https://mp.weixin.qq.com/s/42AOUuTsYzt4nj69sqK0RA)
 - [年轻人，看看 Redisson 分布式锁—可重入锁吧！太重要了](https://mp.weixin.qq.com/s/BlDsXWOcqpudORSiyI05Lg)
 - [Redis 分布式锁的正确实现原理演化历程与 Redisson 实战总结](https://mp.weixin.qq.com/s/PKGYoerpjWGeDzDE2iCFag)
+- [从零到一编码实现Redis分布式锁](https://mp.weixin.qq.com/s/fwpHS07LcLLe82_cGOUxKA)
+
+
 
 
 
