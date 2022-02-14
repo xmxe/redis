@@ -35,6 +35,8 @@
 - [这 40 道 Redis 面试题让你不再慌（附答案）](https://mp.weixin.qq.com/s/hGJJz5yCtfRkfccG9nYNjw)
 - [Redis规范你应该了解一下](https://mp.weixin.qq.com/s/jxLS1QZGio55Mk078VTL0g)
 - [看完后，我才明白Redis为什么默认16个数据库](https://mp.weixin.qq.com/s/Z5eBUHe62K6t_APgc6PTYQ)
+- [Redis夺命十二问，你能扛到第几问](https://mp.weixin.qq.com/s/bWBFcCnoJ05zSQe8_pNCig)
+- [手写Redis服务端，从设计者的角度聊一聊Redis本身](https://mp.weixin.qq.com/s/5lNDbc9h1u2jlGfRwaVW6A)
 
 
 
@@ -75,7 +77,9 @@
 
 
 
+#### 业务结合
 
+- [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q)
 
 
 
