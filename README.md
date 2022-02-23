@@ -80,6 +80,7 @@
 #### 业务结合
 
 - [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q)
+- [手把手教你在学会Docker安装Redis镜像](https://mp.weixin.qq.com/s/XYwDWnQ6KFyPiClmngePQA)
 
 
 
