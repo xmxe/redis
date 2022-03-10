@@ -37,6 +37,7 @@
 - [看完后，我才明白Redis为什么默认16个数据库](https://mp.weixin.qq.com/s/Z5eBUHe62K6t_APgc6PTYQ)
 - [Redis夺命十二问，你能扛到第几问](https://mp.weixin.qq.com/s/bWBFcCnoJ05zSQe8_pNCig)
 - [手写Redis服务端，从设计者的角度聊一聊Redis本身](https://mp.weixin.qq.com/s/5lNDbc9h1u2jlGfRwaVW6A)
+- [一口气说出 Redis 16 个常见使用场景 !](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
 
 
 
@@ -81,8 +82,9 @@
 
 - [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q)
 - [手把手教你在学会Docker安装Redis镜像](https://mp.weixin.qq.com/s/XYwDWnQ6KFyPiClmngePQA)
-
-
+- [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q)
+- [Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ)
+- [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA)
 
 #### 命令
 

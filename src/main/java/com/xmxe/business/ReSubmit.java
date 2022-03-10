@@ -27,7 +27,7 @@ import java.lang.reflect.Method;
 import java.util.Random;
 
 /**
- * [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA)
+ * 解决海量重复提交问题
  */
 public class ReSubmit {
 }

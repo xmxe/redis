@@ -31,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Spring Boot + Redis 实现延时队列 (https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ)
+ * Spring Boot + Redis 实现延时队列
  * 源码(https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay)
  *
  * 业务流程:
