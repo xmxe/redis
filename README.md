@@ -85,6 +85,7 @@
 - [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q)
 - [Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ)
 - [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA)
+- [如何Redis解决WebSocket分布式场景下的Session共享问题](https://mp.weixin.qq.com/s/2MVST4w1QietDQmYt__7QA)
 
 #### 命令
 
