@@ -17,10 +17,12 @@
 - [你还不了解Redis的发布/订阅功能与Redis的Stream吗](https://mp.weixin.qq.com/s/wjThHZT1edWmn31YZP9U7Q)
 - [妈妈再也不担心我面试被Redis问得脸都绿了](https://mp.weixin.qq.com/s/A8qQiLwE10j-eC_K8ylvzw)
 - [Redis 面试知识点总结！](https://mp.weixin.qq.com/s/KCBk_XYarpoEgW_QpBkLYg)
-- [一文搞定Redis五大数据类型及使用场景](https://mp.weixin.qq.com/s/JxkCGZI0P6xhzD1nv99Bvg)
+- [这 40 道 Redis 面试题让你不再慌（附答案）](https://mp.weixin.qq.com/s/hGJJz5yCtfRkfccG9nYNjw)
+- [Redis夺命十二问，你能扛到第几问](https://mp.weixin.qq.com/s/bWBFcCnoJ05zSQe8_pNCig)
 - [Redis 的 8 大数据类型，写得非常好！](https://mp.weixin.qq.com/s/9Tzw3zoNmePyUc3o9BHumQ)
 - [从应用到底层 36张图带你进入Redis世界](https://mp.weixin.qq.com/s/WqdOIqz46A5Af72J_Jkk8g)
 - [Redis为什么变慢了？一文讲透如何排查Redis性能问题 | 万字长文](https://mp.weixin.qq.com/s/s0hgRS2bmnYszA9OJxz56Q)
+- [Redis 突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
 - [Redis最佳实践：7个维度+43条使用规范，带你彻底玩转Redis](https://mp.weixin.qq.com/s/5m8RwxxxRS2QPyRn4uSaCQ)
 - [Redis 为什么用单线程模型？终于知道了！](https://mp.weixin.qq.com/s/SlHBKlfF6qlXde_83dM5Ug)
 - [为什么 Redis 单线程却能支撑高并发？](https://mp.weixin.qq.com/s/SunQ8BJjFfujNSEnqyWqpQ)
@@ -31,13 +33,12 @@
 - [redis 为什么把简单的字符串设计成 SDS？](https://mp.weixin.qq.com/s/tsa3llfRlnrdBmlIXIuj3A)
 - [Redis 内存满了怎么办？](https://mp.weixin.qq.com/s/-kKe_ss01CkLMRERyyjt1Q)
 - [内存耗尽后 Redis 会发生什么？](https://mp.weixin.qq.com/s/YqkVmIaDRV31-WrcW8K26g)
-- [Redis 到底是怎么实现“附近的人”这个功能的呢？](https://mp.weixin.qq.com/s/HVJLoRqUulLyCoNvamBSgw)
-- [这 40 道 Redis 面试题让你不再慌（附答案）](https://mp.weixin.qq.com/s/hGJJz5yCtfRkfccG9nYNjw)
 - [Redis规范你应该了解一下](https://mp.weixin.qq.com/s/jxLS1QZGio55Mk078VTL0g)
 - [看完后，我才明白Redis为什么默认16个数据库](https://mp.weixin.qq.com/s/Z5eBUHe62K6t_APgc6PTYQ)
-- [Redis夺命十二问，你能扛到第几问](https://mp.weixin.qq.com/s/bWBFcCnoJ05zSQe8_pNCig)
 - [手写Redis服务端，从设计者的角度聊一聊Redis本身](https://mp.weixin.qq.com/s/5lNDbc9h1u2jlGfRwaVW6A)
 - [一口气说出 Redis 16 个常见使用场景 !](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
+- [一文搞定Redis五大数据类型及使用场景](https://mp.weixin.qq.com/s/JxkCGZI0P6xhzD1nv99Bvg)
+- [Redis 过期 key 删除，那些不得不说的事情](https://mp.weixin.qq.com/s/iR8EgI9-p-BXjJEfTs3G7Q)
 
 
 
@@ -86,6 +87,7 @@
 - [Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ)
 - [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA)
 - [如何Redis解决WebSocket分布式场景下的Session共享问题](https://mp.weixin.qq.com/s/2MVST4w1QietDQmYt__7QA)
+- [Redis 到底是怎么实现“附近的人”这个功能的呢？](https://mp.weixin.qq.com/s/HVJLoRqUulLyCoNvamBSgw)
 
 #### 命令
 
