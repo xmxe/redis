@@ -57,6 +57,7 @@
 - [Redis 主库宕机如何快速恢复](https://mp.weixin.qq.com/s/PA31mNTzlQ2EGYEXfWagXQ)
 - [如何从0到1构建一个稳定、高性能的Redis集群？](https://mp.weixin.qq.com/s/ZXz2IzbQjQJzCq_hkpkuEg)
 - [Redis 宕机，数据丢了](https://mp.weixin.qq.com/s/RxhaZFnMAf7bAgYUtTGLuA)
+- [小伙用 12 张图讲明白了 Redis 持久化！](https://mp.weixin.qq.com/s/q7KEOA2Dy2Q5QpDX8FkPjg)
 
 
 
