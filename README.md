@@ -7,8 +7,8 @@
 | [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
 | [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | 基于redis实现扣减库存的具体实现                              |
 |                                                              | [SpringBoot + Redis：模拟 10w 人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw) |
-|                                                              | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q) |
-|                                                              | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
+| [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe) | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q) |
+| [redis-websocket](https://github.com/xmxe/redis/tree/master/redis-websocket) | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
 
 
 

@@ -21,6 +21,7 @@
 		<module>redis-resubmit</module>
 		<module>redis-stock</module>
 		<module>redis-subscribe</module>
+		<module>redis-websocket</module>
 	</modules>
 
 	<dependencies>
