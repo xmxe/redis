@@ -6,7 +6,7 @@
 | [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | redis分布式锁的几种实现                                      |
 | [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
 | [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | 基于redis实现扣减库存的具体实现                              |
-|                                                              | [SpringBoot + Redis：模拟 10w 人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw) |
+|                                                              |                                                              |
 | [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe) | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q) |
 | [redis-websocket](https://github.com/xmxe/redis/tree/master/redis-websocket) | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
 
@@ -92,12 +92,11 @@
 
   
 
-
-
 #### 业务结合
 
 - [手把手教你在学会Docker安装Redis镜像](https://mp.weixin.qq.com/s/XYwDWnQ6KFyPiClmngePQA)
 - [Redis 到底是怎么实现“附近的人”这个功能的呢？](https://mp.weixin.qq.com/s/HVJLoRqUulLyCoNvamBSgw)
+- [SpringBoot + Redis：模拟 10w 人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw)
 
 #### 命令
 
