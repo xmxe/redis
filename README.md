@@ -2,10 +2,13 @@
 
 | name                                                         | description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [Spring Boot + Redis 实现延时队列](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) |
+| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [gitee demo](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
 | [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | redis分布式锁的几种实现                                      |
-| [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | 解决海量重复提交问题                                         |
+| [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
 | [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | 基于redis实现扣减库存的具体实现                              |
+|                                                              | [SpringBoot + Redis：模拟 10w 人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw) |
+|                                                              | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q) |
+|                                                              | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
 
 
 
@@ -56,18 +59,18 @@
 #### Redis高可用/持久化
 
 
-- [彻底理解 Redis 的持久化和主从复制](https://mp.weixin.qq.com/s/5IBOKcoBxVoGSMrn3vBGOw)
 - [同样是持久化，竟然有这么大的差别！](https://mp.weixin.qq.com/s/SVbVwHOAwL1RX0fa-rYGxg)
 - [如何让 Redis 更持久](https://mp.weixin.qq.com/s/G3ct5tWox5Qt4tLUDEpRuw)
+- [Redis 宕机，数据丢了](https://mp.weixin.qq.com/s/RxhaZFnMAf7bAgYUtTGLuA)
+- [小伙用 12 张图讲明白了 Redis 持久化！](https://mp.weixin.qq.com/s/q7KEOA2Dy2Q5QpDX8FkPjg)
+- [彻底理解 Redis 的持久化和主从复制](https://mp.weixin.qq.com/s/5IBOKcoBxVoGSMrn3vBGOw)
+- [Redis 主库宕机如何快速恢复](https://mp.weixin.qq.com/s/PA31mNTzlQ2EGYEXfWagXQ)
+- [Redis官方的高可用性解决方案](https://mp.weixin.qq.com/s/8JPBNMGhBsq2jfW9v-H5vQ)
 - [一文把Redis主从复制、哨兵、Cluster三种模式摸透](https://mp.weixin.qq.com/s/BPcis9rPiWosFid5w0M40A)
 - [Redis的主从复制是如何做的？复制过程中也会产生各种问题](https://mp.weixin.qq.com/s/I3GimkIf27DL1uRqxImKWA)
 - [Redis中主、从库宕机如何恢复？](https://mp.weixin.qq.com/s/oRcOPBHwbimFak6CtooHEg)
 - [Redis 高可用篇：你管这叫主从架构数据同步原理？](https://mp.weixin.qq.com/s/NEUdCfRtHma3mkJqFKym5A)
-- [Redis官方的高可用性解决方案](https://mp.weixin.qq.com/s/8JPBNMGhBsq2jfW9v-H5vQ)
-- [Redis 主库宕机如何快速恢复](https://mp.weixin.qq.com/s/PA31mNTzlQ2EGYEXfWagXQ)
 - [如何从0到1构建一个稳定、高性能的Redis集群？](https://mp.weixin.qq.com/s/ZXz2IzbQjQJzCq_hkpkuEg)
-- [Redis 宕机，数据丢了](https://mp.weixin.qq.com/s/RxhaZFnMAf7bAgYUtTGLuA)
-- [小伙用 12 张图讲明白了 Redis 持久化！](https://mp.weixin.qq.com/s/q7KEOA2Dy2Q5QpDX8FkPjg)
 
 
 
@@ -86,18 +89,14 @@
 - [年轻人，看看 Redisson 分布式锁—可重入锁吧！太重要了](https://mp.weixin.qq.com/s/BlDsXWOcqpudORSiyI05Lg)
 - [Redis 分布式锁的正确实现原理演化历程与 Redisson 实战总结](https://mp.weixin.qq.com/s/PKGYoerpjWGeDzDE2iCFag)
 - [从零到一编码实现Redis分布式锁](https://mp.weixin.qq.com/s/fwpHS07LcLLe82_cGOUxKA)
-- [SpringBoot + Redis：模拟 10w 人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw)
+
+  
 
 
 
 #### 业务结合
 
-- [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q)
 - [手把手教你在学会Docker安装Redis镜像](https://mp.weixin.qq.com/s/XYwDWnQ6KFyPiClmngePQA)
-- [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q)
-- [Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ)
-- [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA)
-- [如何Redis解决WebSocket分布式场景下的Session共享问题](https://mp.weixin.qq.com/s/2MVST4w1QietDQmYt__7QA)
 - [Redis 到底是怎么实现“附近的人”这个功能的呢？](https://mp.weixin.qq.com/s/HVJLoRqUulLyCoNvamBSgw)
 
 #### 命令

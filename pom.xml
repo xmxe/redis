@@ -20,6 +20,7 @@
 		<module>redis-distributedlock</module>
 		<module>redis-resubmit</module>
 		<module>redis-stock</module>
+		<module>redis-subscribe</module>
 	</modules>
 
 	<dependencies>
