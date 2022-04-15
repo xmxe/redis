@@ -1,4 +1,4 @@
-package com.xmxe.business;
+package com.xmxe.resubmit;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,18 +1,14 @@
-package com.xmxe.business;
+package com.xmxe.stock;
 
-import com.xmxe.distributedlock.lock_demo1.RedisLockUtil;
+import com.xmxe.util.RedisTemplateDistributedLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCluster;
 
@@ -21,56 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
-/**
- * 基于redis实现扣减库存的具体实现(Controller层)
- */
-@RestController
-class StockController {
-
-	@Autowired
-	private RedisStockService stockService;
-
-	@RequestMapping(value = "stock", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public Object stock() {
-		// 商品ID
-		long commodityId = 1;
-		// 库存ID
-		String redisKey = "redis_key:stock:" + commodityId;
-		long stock = stockService.stock(redisKey, 60 * 60, 2, () -> initStock(commodityId));
-		return stock >= 0;
-	}
-
-	/**
-	 * 获取初始的库存
-	 *
-	 * @return
-	 */
-	private int initStock(long commodityId) {
-		// dosomething 这里做一些初始化库存的操作
-		return 1000;
-	}
-
-	@RequestMapping(value = "getStock", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public Object getStock() {
-		// 商品ID
-		long commodityId = 1;
-		// 库存ID
-		String redisKey = "redis_key:stock:" + commodityId;
-
-		return stockService.getStock(redisKey);
-	}
-
-	@RequestMapping(value = "addStock", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public Object addStock() {
-		// 商品ID
-		long commodityId = 2;
-		// 库存ID
-		String redisKey = "redis_key:stock:" + commodityId;
-
-		return stockService.addStock(redisKey, 2);
-	}
-}
 
 /**
  * 基于redis实现扣减库存的具体实现(Service层)
@@ -146,7 +92,7 @@ public class RedisStockService {
 		long stock = stock(key, num);
 		// 初始化库存
 		if (stock == UNINITIALIZED_STOCK) {
-			RedisLockUtil redisLock = new RedisLockUtil();
+			RedisTemplateDistributedLock redisLock = new RedisTemplateDistributedLock();
 			String lockid = null;
 			try {
 				// 获取锁
@@ -201,7 +147,7 @@ public class RedisStockService {
 		}
 
 		Assert.notNull(expire,"初始化库存失败，库存过期时间不能为null");
-		RedisLockUtil redisLock = new RedisLockUtil();
+		RedisTemplateDistributedLock redisLock = new RedisTemplateDistributedLock();
 		String lockid = null;
 		try {
 			// 获取锁
@@ -268,15 +214,5 @@ public class RedisStockService {
 		});
 		return result;
 	}
-}
-/**
- * 获取库存回调
- */
-interface IStockCallback {
-
-	/**
-	 * 获取库存
-	 */
-	int getStock();
 }
 

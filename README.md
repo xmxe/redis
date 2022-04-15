@@ -1,4 +1,14 @@
 
+
+| name                                                         | description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [Spring Boot + Redis 实现延时队列](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) |
+| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | redis分布式锁的几种实现                                      |
+| [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | 解决海量重复提交问题                                         |
+| [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | 基于redis实现扣减库存的具体实现                              |
+
+
+
 #### Redis命令
 
 - [Reds命令（key、string）](https://blog.csdn.net/weixin_44626569/article/details/90046582)

@@ -1,4 +1,4 @@
-package com.xmxe.business;
+package com.xmxe.delay;
 
 import com.alibaba.fastjson.JSON;
 import com.xmxe.entity.DelayJob;
@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 /**
- * Spring Boot + Redis 实现延时队列
- * 源码(https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay)
+ *
  *
  * 业务流程:
  * 1.用户提交任务。首先将任务推送至延迟队列中。

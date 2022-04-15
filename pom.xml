@@ -16,10 +16,10 @@
 	</parent>
 
 	<modules>
-		<module>redis-stock</module>
-		<module>redis-distributedlock</module>
 		<module>redis-delayqueue</module>
+		<module>redis-distributedlock</module>
 		<module>redis-resubmit</module>
+		<module>redis-stock</module>
 	</modules>
 
 	<dependencies>
