@@ -78,16 +78,28 @@
 
 
 - [阿里面试官：分布式锁到底用Redis好？还是Zookeeper好？](https://mp.weixin.qq.com/s/5T0nrf5LBSqOiPd99OB3tw)
+
 - [分布式锁用 Redis 还是 Zookeeper？](https://mp.weixin.qq.com/s/_P3zWS1QzPdQp10Jb1bSOA)
+
 - [Redis分布式锁到底安全吗](https://mp.weixin.qq.com/s/O9XZxwAcrCY-ninASw0I5Q)
+
 - [Redis分布式锁深入探究](https://mp.weixin.qq.com/s/9SPMfKpv4iF_9m2F9ZTa3A)
+
 - [七种方案！探讨Redis分布式锁的正确使用姿势](https://mp.weixin.qq.com/s/LTS3MKBU2FbRivXyQJcptA)
+
 - [聊聊redis分布式锁的8大坑](https://mp.weixin.qq.com/s/vnVyvTeKvT_ZfMHr5_7CNg)
+
 - [这才叫细：带你深入理解Redis分布式锁](https://mp.weixin.qq.com/s/yUH8jH9NTPLk24J_BQ0JfQ)
+
 - [RedisTemplate分布式锁演变、Redission分布式锁实现](https://mp.weixin.qq.com/s/42AOUuTsYzt4nj69sqK0RA)
+
 - [年轻人，看看 Redisson 分布式锁—可重入锁吧！太重要了](https://mp.weixin.qq.com/s/BlDsXWOcqpudORSiyI05Lg)
+
 - [Redis 分布式锁的正确实现原理演化历程与 Redisson 实战总结](https://mp.weixin.qq.com/s/PKGYoerpjWGeDzDE2iCFag)
+
 - [从零到一编码实现Redis分布式锁](https://mp.weixin.qq.com/s/fwpHS07LcLLe82_cGOUxKA)
+
+- [面试官问：Redis 分布式锁如何自动续期？](https://mp.weixin.qq.com/s/x9YFF4QtHrCu3abSQHEL-A)
 
   
 
