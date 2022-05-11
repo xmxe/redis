@@ -53,6 +53,8 @@
 - [一口气说出 Redis 16 个常见使用场景 !](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
 - [一文搞定Redis五大数据类型及使用场景](https://mp.weixin.qq.com/s/JxkCGZI0P6xhzD1nv99Bvg)
 - [Redis 过期 key 删除，那些不得不说的事情](https://mp.weixin.qq.com/s/iR8EgI9-p-BXjJEfTs3G7Q)
+- [Redis 的过期数据会被立马删除么？](https://mp.weixin.qq.com/s/qJt0B9p0GeUkekK15xL-jw)
+- [面试官：有一种数据类型，Redis 要存两次，为什么](https://mp.weixin.qq.com/s/UEj2hQcoyhnu7CYGgR8OgA)
 
 
 
