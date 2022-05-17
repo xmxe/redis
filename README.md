@@ -10,7 +10,7 @@
 | [redis-websocket](https://github.com/xmxe/redis/tree/master/redis-websocket) | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
 | [redis-searchfilter](https://github.com/xmxe/redis/tree/master/redis-searchfilter) | [springboot java+redis 实现简单实用的搜索栏热搜功能，不雅文字过滤功能。](https://mp.weixin.qq.com/s/MN172c64M7MWN57kTXHIgg) |
 | [redis-star](https://github.com/xmxe/redis/tree/master/redis-star) | [基于redis的点赞功能的实现](https://blog.csdn.net/qq_37618461/article/details/103821433) |
-
+|[redis-limitanno](https://github.com/xmxe/redis/tree/master/redis-limitanno) | [Redis 做接口限流，一个注解的事！](https://mp.weixin.qq.com/s/rzz2tgBBJpWz7gjmEfz2XQ) |
 
 
 #### Redis命令

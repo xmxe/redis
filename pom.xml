@@ -24,6 +24,7 @@
 		<module>redis-websocket</module>
 		<module>redis-searchfilter</module>
 		<module>redis-star</module>
+		<module>redis-limitanno</module>
 	</modules>
 
 	<dependencies>
