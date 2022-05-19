@@ -40,6 +40,7 @@
 - [Redis最佳实践：7个维度+43条使用规范，带你彻底玩转Redis](https://mp.weixin.qq.com/s/5m8RwxxxRS2QPyRn4uSaCQ)
 - [Redis 为什么用单线程模型？终于知道了！](https://mp.weixin.qq.com/s/SlHBKlfF6qlXde_83dM5Ug)
 - [为什么 Redis 单线程却能支撑高并发？](https://mp.weixin.qq.com/s/SunQ8BJjFfujNSEnqyWqpQ)
+- [深度解析单线程的 Redis 如何做到每秒数万 QPS 的超高处理能力！](https://mp.weixin.qq.com/s/4bSy5cld0oZg8gqNGuemZA)
 - [Redis不是一直号称单线程效率也很高吗，为什么又采用多线程了](https://mp.weixin.qq.com/s/SYUYvKCxsyMbdBsRrJOZqA)
 - [面试：Redis新版本开始引入多线程，谈谈你的看法？](https://mp.weixin.qq.com/s/YYrCeIEXHhSk7X4frU_oDg)
 - [Redis 新特性篇：多线程模型解读](https://mp.weixin.qq.com/s/XP-7CJ3OHxIiYg222wNVEg)
