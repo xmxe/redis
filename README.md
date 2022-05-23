@@ -71,6 +71,7 @@
 - [Redis 主库宕机如何快速恢复](https://mp.weixin.qq.com/s/PA31mNTzlQ2EGYEXfWagXQ)
 - [Redis官方的高可用性解决方案](https://mp.weixin.qq.com/s/8JPBNMGhBsq2jfW9v-H5vQ)
 - [一文把Redis主从复制、哨兵、Cluster三种模式摸透](https://mp.weixin.qq.com/s/BPcis9rPiWosFid5w0M40A)
+- [Redis主从、哨兵、 Cluster集群一锅端！](https://mp.weixin.qq.com/s/U_5Tla4_XzlJsq3uRI2ifA)
 - [Redis的主从复制是如何做的？复制过程中也会产生各种问题](https://mp.weixin.qq.com/s/I3GimkIf27DL1uRqxImKWA)
 - [Redis中主、从库宕机如何恢复？](https://mp.weixin.qq.com/s/oRcOPBHwbimFak6CtooHEg)
 - [Redis 高可用篇：你管这叫主从架构数据同步原理？](https://mp.weixin.qq.com/s/NEUdCfRtHma3mkJqFKym5A)
