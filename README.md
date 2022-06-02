@@ -109,5 +109,10 @@
 #### 命令
 
 - ./redis-server /usr/local/redis/redis.conf 
+
 - ./redis-cli -h 127.0.0.1 -p 6379 -a 123456
+
 - ./redis-cli -h 127.0.0.1 -p 6379 -a 123456 shutdown //关闭redis
+
+- [Linux下载地址](https://download.redis.io/releases/)
+- [windows下载地址](https://github.com/microsoftarchive/redis/tags)
