@@ -58,6 +58,7 @@
 - [Redis 过期 key 删除，那些不得不说的事情](https://mp.weixin.qq.com/s/iR8EgI9-p-BXjJEfTs3G7Q)
 - [Redis 的过期数据会被立马删除么？](https://mp.weixin.qq.com/s/qJt0B9p0GeUkekK15xL-jw)
 - [面试官：有一种数据类型，Redis 要存两次，为什么](https://mp.weixin.qq.com/s/UEj2hQcoyhnu7CYGgR8OgA)
+- [面试官：大量请求 Redis 不存在的数据，从而打倒数据库，你有什么方案？](https://mp.weixin.qq.com/s/soF3F8YYSbynK2lyofGMAg)
 
 
 
