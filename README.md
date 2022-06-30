@@ -105,6 +105,7 @@
 - [Redis 到底是怎么实现“附近的人”这个功能的呢？](https://mp.weixin.qq.com/s/HVJLoRqUulLyCoNvamBSgw)
 - [SpringBoot + Redis：模拟 10w 人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw)
 - [电商红包雨是如何实现的？](https://mp.weixin.qq.com/s/uehjf3EXb107Dy6wnO34qQ)
+- [永远不要使用Redis过期监听实现定时任务](https://mp.weixin.qq.com/s/4bgQrYm4i7KdSLFKGvsOIA)
 
 
 
