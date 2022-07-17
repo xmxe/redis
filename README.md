@@ -79,6 +79,7 @@
 - [Redis中主、从库宕机如何恢复？](https://mp.weixin.qq.com/s/oRcOPBHwbimFak6CtooHEg)
 - [Redis 高可用篇：你管这叫主从架构数据同步原理？](https://mp.weixin.qq.com/s/NEUdCfRtHma3mkJqFKym5A)
 - [如何从0到1构建一个稳定、高性能的Redis集群？](https://mp.weixin.qq.com/s/ZXz2IzbQjQJzCq_hkpkuEg)
+- [4 种 Redis 集群方案介绍 + 优缺点对比](https://mp.weixin.qq.com/s/Po85M418zvos3pHev2q0Tg)
 
 
 
