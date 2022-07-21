@@ -2,7 +2,7 @@
 
 | name                                                         | description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [gitee demo](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
+| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [base-redis-delay](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
 | [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | redis分布式锁的几种实现                                      |
 | [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
 | [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | [基于redis实现扣减库存的具体实现](https://www.jianshu.com/p/76bc0e963172) |
@@ -110,13 +110,10 @@
 - [如何用 Redis 统计独立用户访问量？](https://mp.weixin.qq.com/s/oQXYKjKb0XqAJnO-m5uqOw)
 
 
-
 #### 命令
 
-- ./redis-server /usr/local/redis/redis.conf 
-
+- ./redis-server /usr/local/redis/redis.conf
 - ./redis-cli -h 127.0.0.1 -p 6379 -a 123456
-
 - ./redis-cli -h 127.0.0.1 -p 6379 -a 123456 shutdown //关闭redis
 
 - [Linux下载地址](https://download.redis.io/releases/)

@@ -1,14 +1,16 @@
-package com.xmxe.delay;
+package com.xmxe.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.xmxe.entity.DelayJob;
-import com.xmxe.entity.Job;
-import com.xmxe.entity.JobService;
+import com.xmxe.bean.DelayJob;
+import com.xmxe.bean.Job;
+import com.xmxe.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  *
@@ -61,52 +63,74 @@ import org.springframework.web.bind.annotation.RestController;
  * 任务的删除/消费
  * 现在我们请求：localhost:8000/delay/delete 此时在Job pool中此任务将会被移除，此时元数据已经不存在，但任务还在DelayBucket中循环，然而在循环中当检测到元数据已经不存的话此延时任务会被移除。
  */
+
 @RestController
 @RequestMapping("delay")
-class DelayController {
+public class DelayController {
+    
+    @Autowired
+    private JobService jobService;
 
-	@Autowired
-	private JobService jobService;
+    private final static AtomicInteger index = new AtomicInteger(0);
 
-	/**
-	 * 添加
-	 *
-	 * @param request
-	 * @return
-	 */
-	@RequestMapping(value = "add", method = RequestMethod.POST)
-	public String addDefJob(Job request) {
-		DelayJob delayJob = jobService.addDefJob(request);
-		return JSON.toJSONString(delayJob);
-	}
+    private final static String[] tag = new String[]{"test","web","java"};
 
-	/**
-	 * 获取
-	 *
-	 * @return
-	 */
-	@RequestMapping(value = "pop", method = RequestMethod.GET)
-	public String getProcessJob(String topic) {
-		Job process = jobService.getProcessJob(topic);
-		return JSON.toJSONString(process);
-	}
 
-	/**
-	 * 完成一个执行的任务
-	 *
-	 * @param jobId
-	 * @return
-	 */
-	@RequestMapping(value = "finish", method = RequestMethod.DELETE)
-	public String finishJob(Long jobId) {
-		jobService.finishJob(jobId);
-		return "success";
-	}
+    /**
+     * 添加 测试的时候使用
+     * @return
+     */
+    @RequestMapping(value = "addTest",method = RequestMethod.POST)
+    public String addDefJobTest() {
+        Job request = new Job();
+        int i = index.addAndGet(1);
+        Long aLong = Long.valueOf(i);
+        request.setId(aLong);
+        int num = i%3;
+        request.setTopic(tag[num]);
+        request.setMessage("tag:" + tag[num] + "id:" + i);
+        request.setDelayTime(10000);
+        request.setTtrTime(10000);
+        DelayJob delayJob = jobService.addDefJob(request);
+        return JSON.toJSONString(delayJob);
+    }
 
-	@RequestMapping(value = "delete", method = RequestMethod.DELETE)
-	public String deleteJob(Long jobId) {
-		jobService.deleteJob(jobId);
-		return "success";
-	}
+    /**
+     * 添加
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "add",method = RequestMethod.POST)
+    public String addDefJob(Job request) {
+        DelayJob delayJob = jobService.addDefJob(request);
+        return JSON.toJSONString(delayJob);
+    }
 
+    /**
+     * 获取
+     * @return
+     */
+    @RequestMapping(value = "pop/{topic}",method = RequestMethod.GET)
+    public String getProcessJob(@PathVariable("topic") String topic) {
+        Job process = jobService.getProcessJob(topic);
+        return JSON.toJSONString(process);
+    }
+
+    /**
+     * 完成一个执行的任务
+     * @param jobId
+     * @return
+     */
+    @RequestMapping(value = "finish",method = RequestMethod.DELETE)
+    public String finishJob(Long jobId) {
+        jobService.finishJob(jobId);
+        return "success";
+    }
+
+    @RequestMapping(value = "delete",method = RequestMethod.DELETE)
+    public String deleteJob(Long jobId) {
+        jobService.deleteJob(jobId);
+        return "success";
+    }
+    
 }
