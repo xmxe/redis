@@ -1,6 +1,5 @@
 package com.xmxe.distributedlock.jedisimpl;
 
-import com.xmxe.util.JedisUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;

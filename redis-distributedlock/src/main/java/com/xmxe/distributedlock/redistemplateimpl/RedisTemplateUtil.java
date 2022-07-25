@@ -1,4 +1,4 @@
-package com.xmxe.util;
+package com.xmxe.distributedlock.redistemplateimpl;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;

@@ -1,4 +1,4 @@
-package com.xmxe.util;
+package com.xmxe.distributedlock.jedisimpl;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
