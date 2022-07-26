@@ -1,5 +1,7 @@
-package com.xmxe.resubmit;
+package com.xmxe.config;
 
+import com.xmxe.anno.AutoIdempotent;
+import com.xmxe.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;

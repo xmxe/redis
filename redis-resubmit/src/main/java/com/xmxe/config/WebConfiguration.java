@@ -1,4 +1,4 @@
-package com.xmxe.resubmit;
+package com.xmxe.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

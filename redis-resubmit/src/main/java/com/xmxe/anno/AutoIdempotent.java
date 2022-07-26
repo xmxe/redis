@@ -1,4 +1,4 @@
-package com.xmxe.resubmit;
+package com.xmxe.anno;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,5 +1,7 @@
-package com.xmxe.resubmit;
+package com.xmxe.controller;
 
+import com.xmxe.anno.AutoIdempotent;
+import com.xmxe.service.TokenService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
