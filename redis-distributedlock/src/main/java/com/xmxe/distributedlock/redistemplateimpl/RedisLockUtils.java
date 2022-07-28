@@ -21,20 +21,13 @@ public class RedisLockUtils {
 	@Autowired
 	private RedisTemplate redisTemplate;
 
-
-	/**
-	 * 拿锁的脚本
-	 */
+	// 拿锁的脚本
 	private static final String LUA_SCRIPT_LOCK = "return redis.call('SET', KEYS[1], ARGV[1], 'NX', 'PX', ARGV[2]) ";
 
-	/**
-	 * 拿锁的脚本
-	 */
+	// 拿锁的脚本
 	private static RedisScript<String> scriptLock = new DefaultRedisScript<>(LUA_SCRIPT_LOCK, String.class);
 
-	/**
-	 * 释放锁锁的脚本
-	 */
+	// 释放锁锁的脚本
 	public static final String LUA_SCRIPT_UN_LOCK = "if " +
 			"(redis.call('GET', KEYS[1]) == ARGV[1] )" +
 			"then " +
@@ -43,9 +36,7 @@ public class RedisLockUtils {
 			"return 0 " +
 			"end";
 
-	/**
-	 * 释放锁的脚本
-	 */
+	// 释放锁的脚本
 	private static RedisScript<Long> scriptLock2 = new DefaultRedisScript<>(LUA_SCRIPT_UN_LOCK, Long.class);
 
 	public static final String LOCK_PRE = "lock.";
@@ -56,9 +47,6 @@ public class RedisLockUtils {
 
 	/***
 	 * 加锁
-	 * @param key
-	 * @param timeOut
-	 * @return
 	 */
 	public RedisLock getLock(String key,long timeOut,long tryLockTimeout) {
 		long timestamp = System.currentTimeMillis();
@@ -93,7 +81,6 @@ public class RedisLockUtils {
 
 	/**
 	 * 释放锁
-	 * @param lock
 	 */
 	public void releaseLock(RedisLock lock) {
 		Object execute = redisTemplate.execute(scriptLock2,

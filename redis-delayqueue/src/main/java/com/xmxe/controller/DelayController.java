@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- *
- *
  * 业务流程:
  * 1.用户提交任务。首先将任务推送至延迟队列中。
  * 2.延迟队列接收到任务后，首先将任务推送至job pool中，然后计算其执行时间。
@@ -67,7 +65,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @RestController
 @RequestMapping("delay")
 public class DelayController {
-    
+
     @Autowired
     private JobService jobService;
 
@@ -78,7 +76,6 @@ public class DelayController {
 
     /**
      * 添加 测试的时候使用
-     * @return
      */
     @RequestMapping(value = "addTest",method = RequestMethod.POST)
     public String addDefJobTest() {
@@ -98,7 +95,6 @@ public class DelayController {
     /**
      * 添加
      * @param request
-     * @return
      */
     @RequestMapping(value = "add",method = RequestMethod.POST)
     public String addDefJob(Job request) {
@@ -108,7 +104,6 @@ public class DelayController {
 
     /**
      * 获取
-     * @return
      */
     @RequestMapping(value = "pop/{topic}",method = RequestMethod.GET)
     public String getProcessJob(@PathVariable("topic") String topic) {
@@ -119,7 +114,6 @@ public class DelayController {
     /**
      * 完成一个执行的任务
      * @param jobId
-     * @return
      */
     @RequestMapping(value = "finish",method = RequestMethod.DELETE)
     public String finishJob(Long jobId) {
@@ -132,5 +126,5 @@ public class DelayController {
         jobService.deleteJob(jobId);
         return "success";
     }
-    
+
 }

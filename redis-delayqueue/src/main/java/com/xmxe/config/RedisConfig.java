@@ -27,7 +27,6 @@ public class RedisConfig extends CachingConfigurerSupport{
 
     /**
      * 创建密钥
-     * @return
      */
     @Bean
     public KeyGenerator keyGenerator() {
@@ -54,7 +53,9 @@ public class RedisConfig extends CachingConfigurerSupport{
     	};
     }
 
-    //通过自定义序列化，解决写入redis后乱码的问题
+    /**
+     * 通过自定义序列化，解决写入redis后乱码的问题
+     */
     @Bean(name="redisTemplate")
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<String, String> template = new RedisTemplate<>();

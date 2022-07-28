@@ -9,13 +9,18 @@ import java.util.Map;
 import java.util.Set;
 
 
-//屏蔽敏感词初始化
+/**
+ * 屏蔽敏感词初始化
+ */
 @Configuration
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class SensitiveWordInit {
 	// 字符编码
 	private String ENCODING = "UTF-8";
-	// 初始化敏感字库
+
+	/**
+	 * 初始化敏感字库
+	 */
 	public Map initKeyWord() throws IOException {
 		// 读取敏感词库 ,存入Set中
 		Set<String> wordSet = readSensitiveWordFile();
@@ -23,7 +28,9 @@ public class SensitiveWordInit {
 		return addSensitiveWordToHashMap(wordSet);
 	}
 
-	// 读取敏感词库 ,存入HashMap中
+	/**
+	 * 读取敏感词库 ,存入HashMap中
+	 */
 	private Set<String> readSensitiveWordFile() throws IOException {
 		Set<String> wordSet = null;
 		ClassPathResource classPathResource = new ClassPathResource("static/censorword.txt");
@@ -50,7 +57,10 @@ public class SensitiveWordInit {
 		}
 		return wordSet;
 	}
-	// 将HashSet中的敏感词,存入HashMap中
+
+	/**
+	 * 将HashSet中的敏感词,存入HashMap中
+	 */
 	private Map addSensitiveWordToHashMap(Set<String> wordSet) {
 		// 初始化敏感词容器，减少扩容操作
 		Map wordMap = new HashMap(wordSet.size());

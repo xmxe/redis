@@ -25,7 +25,6 @@ public class JedisDistributedLock2 {
 
 	/**
 	 * 获取锁
-	 * @return
 	 */
 	public String acquire() {
 		try {
@@ -56,7 +55,6 @@ public class JedisDistributedLock2 {
 	/**
 	 * 释放锁
 	 * @param identify
-	 * @return
 	 */
 	public boolean release(String identify) {
 		if (identify == null) {

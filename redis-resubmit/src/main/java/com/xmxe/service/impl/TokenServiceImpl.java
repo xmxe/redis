@@ -24,7 +24,7 @@ public class TokenServiceImpl implements TokenService {
 
 
 	/**
-	 * 创建token * * @return
+	 * 创建token
 	 */
 	@Override
 	public String createToken() {
@@ -45,7 +45,7 @@ public class TokenServiceImpl implements TokenService {
 
 
 	/**
-	 * 检验token * * @param request * @return
+	 * 检验token
 	 */
 	@Override
 	public boolean checkToken(HttpServletRequest request) throws Exception {

@@ -17,12 +17,10 @@ import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
  */
 @Configuration
 @EnableCaching
-public class RedisConfig
-{
+public class RedisConfig {
 
     @Bean
-    RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory, MessageListenerAdapter listenerAdapter)
-    {
+    RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory, MessageListenerAdapter listenerAdapter) {
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
         // 可以添加多个 messageListener，配置不同的交换机
@@ -31,15 +29,13 @@ public class RedisConfig
     }
 
     @Bean
-    MessageListenerAdapter listenerAdapter(RedisReceiver receiver)
-    {
+    MessageListenerAdapter listenerAdapter(RedisReceiver receiver) {
         // 消息监听适配器
         return new MessageListenerAdapter(receiver, "onMessage");
     }
 
     @Bean
-    StringRedisTemplate template(RedisConnectionFactory connectionFactory)
-    {
+    StringRedisTemplate template(RedisConnectionFactory connectionFactory) {
         return new StringRedisTemplate(connectionFactory);
     }
 

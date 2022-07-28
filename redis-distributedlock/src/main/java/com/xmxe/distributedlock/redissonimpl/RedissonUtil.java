@@ -7,8 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 /**
- * @ClassName:  RedissonUtils   
- * @Description: (redisson工具类)
+ * redisson工具类
  */
 @Component
 public class RedissonUtil {
@@ -17,10 +16,7 @@ public class RedissonUtil {
 	private RedissonClient redissonClient;
 
 	/**
-	  * @Title: getLock
-	  * @Description: (获取分布式锁)
-	  * @param key
-	  * @return RLock 
+	 * 获取分布式锁
 	 */
 	public RLock getLock(String key) {
 		RLock fairLock = null;
@@ -34,12 +30,9 @@ public class RedissonUtil {
 		}
         return fairLock;
 	}
-	
+
 	/**
-	  * @Title: unLock
-	  * @Description: TODO(释放锁)
-	  * @param rLock
-	  * @return void 
+	 * 释放锁
 	 */
 	public void unLock(RLock rLock) {
 		try {
@@ -47,7 +40,7 @@ public class RedissonUtil {
 				rLock.unlock();
 			} else {
 				System.out.println("distribute lock 不存在");
-			} 
+			}
 		} catch (Exception e) {
 			System.out.println("distribute lock key: " + rLock.getName() + " ,释放锁异常");
 			e.printStackTrace();

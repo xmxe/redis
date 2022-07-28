@@ -24,7 +24,7 @@ public class AutoIdempotentInterceptor implements HandlerInterceptor {
 	private TokenService tokenService;
 
 	/**
-	 * 预处理 * * @param request * @param response * @param handler * @return * @throws Exception
+	 * 预处理
 	 */
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -34,7 +34,7 @@ public class AutoIdempotentInterceptor implements HandlerInterceptor {
 		}
 		HandlerMethod handlerMethod = (HandlerMethod) handler;
 		Method method = handlerMethod.getMethod();
-		//被ApiIdempotment标记的扫描
+		// 被ApiIdempotment标记的扫描
 		AutoIdempotent methodAnnotation = method.getAnnotation(AutoIdempotent.class);
 		if (methodAnnotation != null) {
 			try {
@@ -44,7 +44,7 @@ public class AutoIdempotentInterceptor implements HandlerInterceptor {
 				throw ex;
 			}
 		}
-		//必须返回true,否则会被拦截一切请求
+		// 必须返回true,否则会被拦截一切请求
 		return true;
 	}
 
@@ -60,7 +60,7 @@ public class AutoIdempotentInterceptor implements HandlerInterceptor {
 	}
 
 	/**
-	 * 返回的json值 * @param response * @param json * @throws Exception
+	 * 返回的json值
 	 */
 	private void writeReturnJson(HttpServletResponse response, String json) throws Exception {
 		PrintWriter writer = null;

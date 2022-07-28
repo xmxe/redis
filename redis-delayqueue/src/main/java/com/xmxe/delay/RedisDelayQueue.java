@@ -12,7 +12,6 @@ import java.util.Set;
  * 如 生成订单30分钟未支付，则自动取消
  * 生成订单60秒后,给用户发短信
  * demo1
- *
  */
 public class RedisDelayQueue {
 	private static final String ADDR = "127.0.0.1";
@@ -23,7 +22,9 @@ public class RedisDelayQueue {
 		return jedisPool.getResource();
 	}
 
-	//生产者,生成5个订单放进去
+	/**
+	 * 生产者,生成5个订单放进去
+	 */
 	public void productionDelayMessage(){
 		for(int i=0;i<5;i++){
 			//延迟3秒
@@ -35,7 +36,9 @@ public class RedisDelayQueue {
 		}
 	}
 
-	//消费者，取订单
+	/**
+	 * 消费者，取订单
+	 */
 	public void consumerDelayMessage(){
 		Jedis jedis = RedisDelayQueue.getJedis();
 		while(true){
@@ -119,5 +122,3 @@ public class RedisDelayQueue {
 	}
 
 }
-
-

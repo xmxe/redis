@@ -10,12 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 public interface TokenService {
 
 	/**
-	 * 创建token * @return
+	 * 创建token
 	 */
 	String createToken();
 
 	/**
-	 * 检验token * @param request * @return
+	 * 检验token
 	 */
 	boolean checkToken(HttpServletRequest request) throws Exception;
 

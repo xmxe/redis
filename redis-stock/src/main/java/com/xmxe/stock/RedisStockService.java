@@ -33,32 +33,25 @@ public class RedisStockService {
 
 	Logger logger = LoggerFactory.getLogger(RedisStockService.class);
 
-	/**
-	 * 不限库存
-	 */
+	//  不限库存
 	public static final long UNINITIALIZED_STOCK = -3L;
 
-	/**
-	 * Redis 客户端
-	 */
+	// Redis 客户端
 	@Resource
 	private RedisTemplate<String, Object> redisTemplate;
 
-	/**
-	 * 执行扣库存的脚本
-	 */
+	// 执行扣库存的脚本
 	public static final String STOCK_LUA;
 
 	static {
 		/**
 		 *
-		 * @desc 扣减库存Lua脚本
+		 * 扣减库存Lua脚本
 		 * 库存（stock）-1：表示不限库存
 		 * 库存（stock）0：表示没有库存
 		 * 库存（stock）大于0：表示剩余库存
 		 *
-		 * @params 库存key
-		 * @return
+		 * @params k 库存key
 		 *   -3:库存未初始化
 		 *   -2:库存不足
 		 *   -1:不限库存
@@ -124,7 +117,6 @@ public class RedisStockService {
 	 *
 	 * @param key    库存key
 	 * @param num    库存数量
-	 * @return
 	 */
 	public long addStock(String key, int num) {
 
@@ -137,7 +129,6 @@ public class RedisStockService {
 	 * @param key    库存key
 	 * @param expire 过期时间（秒）
 	 * @param num    库存数量
-	 * @return
 	 */
 	public long addStock(String key, Long expire, int num) {
 		boolean hasKey = redisTemplate.hasKey(key);
@@ -215,4 +206,3 @@ public class RedisStockService {
 		return result;
 	}
 }
-

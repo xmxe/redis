@@ -5,10 +5,9 @@ import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
- 
+
 /**
- * @ClassName:  RedissonConfig   
- * @Description: (双端检索单例工厂模式--》创建 redissonClient 交由 spring IOC管理)
+ * (双端检索单例工厂模式--》创建 redissonClient 交由 spring IOC管理)
  */
 @Configuration
 public class RedissonConfig {
@@ -18,7 +17,7 @@ public class RedissonConfig {
 	private static final String password = "redis.pass";
 	private static final String database = "redis.database";
 	private static final String timeout = "cachePool.timeout";
-	
+
 	@Bean
 	public static RedissonClient getRedisson() {
 		if (redissonClient == null) {
@@ -30,7 +29,7 @@ public class RedissonConfig {
 		}
 		return redissonClient;
 	}
-	
+
 	public static RedissonClient getAndSetRedisson() {
 		try {
 			System.out.println("获取redissonClient......");
@@ -57,5 +56,5 @@ public class RedissonConfig {
 		}
 		return redissonClient;
 	}
- 
+
 }

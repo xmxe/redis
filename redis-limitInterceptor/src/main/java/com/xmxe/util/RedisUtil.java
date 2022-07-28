@@ -25,7 +25,6 @@ public class RedisUtil {
 	 * @param lockKey
 	 * @param value
 	 * @param expireTime：单位-秒
-	 * @return
 	 */
 	public boolean getLock(String lockKey, Object value, int expireTime) {
 		try {
@@ -44,9 +43,6 @@ public class RedisUtil {
 
 	/**
 	 * 释放锁
-	 * @param lockKey
-	 * @param value
-	 * @return
 	 */
 	public boolean releaseLock(String lockKey, String value) {
 		String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
@@ -60,8 +56,6 @@ public class RedisUtil {
 
 	/**
 	 * 判断是否存在key
-	 * @param key
-	 * @return
 	 */
 	public boolean hasKey(String key){
 		return redisTemplate.hasKey(key);

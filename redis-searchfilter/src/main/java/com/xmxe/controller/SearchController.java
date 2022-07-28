@@ -12,8 +12,6 @@ import java.io.IOException;
 public class SearchController {
 	/**
 	 * 根据输入词汇判断是否是敏感词汇或非法字符
-	 * @param searchkey
-	 * @return
 	 */
 	@GetMapping("search")
 	public String search(String searchkey) {

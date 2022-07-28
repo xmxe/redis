@@ -9,7 +9,6 @@ public class JobStatusUtils {
      * 获得下一步节点
      * @param status
      * @param process
-     * @return
      */
     public static JobStatus getNext(JobStatus status, JobProcess process) {
         switch (process) {
@@ -78,6 +77,6 @@ public class JobStatusUtils {
         }
         return null;
     }
-    
-    
+
+
 }

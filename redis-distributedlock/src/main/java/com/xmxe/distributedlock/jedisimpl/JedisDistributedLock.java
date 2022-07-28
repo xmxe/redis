@@ -18,7 +18,6 @@ public class JedisDistributedLock {
 
     /**
      * 加锁
-     * 
      * @param locaName       锁的key
      * @param acquireTimeout 获取超时时间
      * @param timeout        锁的超时时间
@@ -67,10 +66,8 @@ public class JedisDistributedLock {
 
     /**
      * 释放锁
-     * 
      * @param lockName   锁的key
      * @param identifier 释放锁的标识
-     * @return
      */
     public boolean releaseLock(String lockName, String identifier) {
         Jedis conn = null;
@@ -104,4 +101,3 @@ public class JedisDistributedLock {
         return retFlag;
     }
 }
-

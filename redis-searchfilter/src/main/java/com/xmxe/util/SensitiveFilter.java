@@ -9,7 +9,9 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-//敏感词过滤器：利用DFA算法  进行敏感词过滤
+/**
+ * 敏感词过滤器：利用DFA算法  进行敏感词过滤
+ */
 public class SensitiveFilter {
 	//敏感词过滤器：利用DFA算法  进行敏感词过滤
 	private Map sensitiveWordMap = null;
@@ -23,12 +25,16 @@ public class SensitiveFilter {
 	// 单例
 	private static SensitiveFilter instance = null;
 
-	// 构造函数，初始化敏感词库
+	/**
+	 * 构造函数，初始化敏感词库
+	 */
 	private SensitiveFilter() throws IOException {
 		sensitiveWordMap = new SensitiveWordInit().initKeyWord();
 	}
 
-	// 获取单例
+	/**
+	 * 获取单例
+	 */
 	public static SensitiveFilter getInstance() throws IOException {
 		if (null == instance) {
 			instance = new SensitiveFilter();
@@ -36,7 +42,9 @@ public class SensitiveFilter {
 		return instance;
 	}
 
-	// 获取文字中的敏感词
+	/**
+	 * 获取文字中的敏感词
+	 */
 	public Set<String> getSensitiveWord(String txt, int matchType) {
 		Set<String> sensitiveWordList = new HashSet<String>();
 		for (int i = 0; i < txt.length(); i++) {
@@ -51,7 +59,9 @@ public class SensitiveFilter {
 		}
 		return sensitiveWordList;
 	}
-	// 替换敏感字字符
+	/**
+	 * 替换敏感字字符
+	 */
 	public String replaceSensitiveWord(String txt, int matchType,
 	                                   String replaceChar) {
 		String resultTxt = txt;
@@ -70,10 +80,6 @@ public class SensitiveFilter {
 
 	/**
 	 * 获取替换字符串
-	 *
-	 * @param replaceChar
-	 * @param length
-	 * @return
 	 */
 	private String getReplaceChars(String replaceChar, int length) {
 		String resultReplace = replaceChar;
@@ -84,12 +90,8 @@ public class SensitiveFilter {
 	}
 
 	/**
-	 * 检查文字中是否包含敏感字符，检查规则如下：<br>
+	 * 检查文字中是否包含敏感字符，检查规则:
 	 * 如果存在，则返回敏感词字符的长度，不存在返回0
-	 * @param txt
-	 * @param beginIndex
-	 * @param matchType
-	 * @return
 	 */
 	public int CheckSensitiveWord(String txt, int beginIndex, int matchType) {
 		// 敏感词结束标识位：用于敏感词只有1位的情况

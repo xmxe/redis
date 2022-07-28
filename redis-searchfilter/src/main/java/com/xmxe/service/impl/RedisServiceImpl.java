@@ -23,8 +23,10 @@ public class RedisServiceImpl implements RedisService {
 	private StringRedisTemplate redisSearchTemplate;
 
 
-	//新增一条该userid用户在搜索栏的历史记录
-	//searchkey 代表输入的关键词
+	/**
+	 * 新增一条该userid用户在搜索栏的历史记录
+	 * @param searchkey 代表输入的关键词
+	 */
 	@Override
 	public int addSearchHistoryByUserId(String userid, String searchkey) {
 		// String shistory = RedisKeyUtils.getSearchHistoryKey(userid);
@@ -43,7 +45,9 @@ public class RedisServiceImpl implements RedisService {
 		return 1;
 	}
 
-	//删除个人历史数据
+	/**
+	 * 删除个人历史数据
+	 */
 	@Override
 	public Long delSearchHistoryByUserId(String userid, String searchkey) {
 		// String shistory = RedisKeyUtils.getSearchHistoryKey(userid);
@@ -51,7 +55,9 @@ public class RedisServiceImpl implements RedisService {
 		return redisSearchTemplate.opsForHash().delete(shistory, searchkey);
 	}
 
-	//获取个人历史数据列表
+	/**
+	 * 获取个人历史数据列表
+	 */
 	@Override
 	public List<String> getSearchHistoryByUserId(String userid) {
 		List<String> stringList = null;
@@ -70,7 +76,9 @@ public class RedisServiceImpl implements RedisService {
 		return null;
 	}
 
-	//新增一条热词搜索记录，将用户输入的热词存储下来
+	/**
+	 * 新增一条热词搜索记录，将用户输入的热词存储下来
+	 */
 	@Override
 	public int incrementScoreByUserId(String searchkey) {
 		Long now = System.currentTimeMillis();
@@ -93,7 +101,9 @@ public class RedisServiceImpl implements RedisService {
 		return 1;
 	}
 
-	//根据searchkey搜索其相关最热的前十名 (如果searchkey为null空，则返回redis存储的前十最热词条)
+	/**
+	 * 根据searchkey搜索其相关最热的前十名 (如果searchkey为null空，则返回redis存储的前十最热词条)
+	 */
 	@Override
 	public List<String> getHotList(String searchkey) {
 		String key = searchkey;
@@ -133,7 +143,9 @@ public class RedisServiceImpl implements RedisService {
 		return result;
 	}
 
-	//每次点击给相关词searchkey热度 +1
+	/**
+	 * 每次点击给相关词searchkey热度 +1
+	 */
 	@Override
 	public int incrementScore(String searchkey) {
 		String key = searchkey;
@@ -144,6 +156,4 @@ public class RedisServiceImpl implements RedisService {
 		valueOperations.getAndSet(key, String.valueOf(now));
 		return 1;
 	}
-
-
 }

@@ -27,7 +27,6 @@ public class ReadyQueue {
     /**
      * 获得队列
      * @param topic
-     * @return
      */
     private BoundListOperations getQueue (String topic) {
         BoundListOperations ops = redisTemplate.boundListOps(getKey(topic));
@@ -47,7 +46,6 @@ public class ReadyQueue {
     /**
      * 移除并获得任务
      * @param topic
-     * @return
      */
     public DelayJob popJob(String topic) {
         BoundListOperations listOperations = getQueue(topic);
@@ -58,5 +56,5 @@ public class ReadyQueue {
         }
         return null;
     }
-    
+
 }

@@ -56,9 +56,7 @@ public class IpUrlLimitInterceptor implements HandlerInterceptor {
 	}
 
 	/**
-	 * @Description: 判断ip是否被禁用
-	 * @param ip
-	 * @return java.lang.Boolean
+	 * 判断ip是否被禁用
 	 */
 	private Boolean ipIsLock(String ip){
 
@@ -68,10 +66,7 @@ public class IpUrlLimitInterceptor implements HandlerInterceptor {
 		return false;
 	}
 	/**
-	 * @Description: 记录请求次数
-	 * @param ip
-	 * @param uri
-	 * @return java.lang.Boolean
+	 * 记录请求次数
 	 */
 	private Boolean addRequestTime(String ip,String uri){
 		String key=IP_URL_REQ_TIME+ip+uri;

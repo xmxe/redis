@@ -14,24 +14,16 @@ import java.util.UUID;
 public class RedisTemplateDistributedLock {
     private static Logger log = LoggerFactory.getLogger(RedisTemplateDistributedLock.class);
 
-    /**
-     * 鉴权信息 key 前缀
-     */
+    // 鉴权信息 key 前缀
     public static final String AUTH_REDIS_PREFIX = "UNIF_AUTH_";
 
-    /**
-     * 缓存信息 key 前缀
-     */
+    // 缓存信息 key 前缀
     public static final String CACHE_REDIS_PREFIX = "UNIF_CACHE_";
 
-    /**
-     * 分布式锁信息 key 前缀
-     */
+    // 分布式锁信息key前缀
     public static final String LOCK_REDIS_PREFIX = "UNIF_LOCK_";
 
-    /**
-     * 默认轮休获取锁间隔时间， 单位：毫秒
-     */
+    // 默认轮休获取锁间隔时间， 单位：毫秒
     private static final int DEFAULT_ACQUIRE_RESOLUTION_MILLIS = 100;
 
     private static final String UNLOCK_LUA;

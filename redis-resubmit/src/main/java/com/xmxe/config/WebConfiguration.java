@@ -2,7 +2,7 @@ package com.xmxe.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.annotation.Resource;
 
@@ -11,7 +11,7 @@ import javax.annotation.Resource;
  * 注意使用@Configuration注解，这样在容器启动是时候就可以添加进入context中。
  */
 @Configuration
-public class WebConfiguration extends WebMvcConfigurerAdapter {
+public class WebConfiguration implements WebMvcConfigurer {
 
 	@Resource
 	private AutoIdempotentInterceptor autoIdempotentInterceptor;
@@ -22,6 +22,5 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(autoIdempotentInterceptor);
-		super.addInterceptors(registry);
 	}
 }

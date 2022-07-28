@@ -11,10 +11,8 @@ import javax.servlet.http.HttpSession;
 @RestController
 public class SocketController {
 
-
     @Autowired
     private WebSocketServer webSocketServer;
-
 
     @GetMapping("/socket/{id}")
     public String socket(@PathVariable("id") String id, HttpSession session) {

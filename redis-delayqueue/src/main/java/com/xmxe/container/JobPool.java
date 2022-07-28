@@ -15,12 +15,12 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class JobPool {
-    
+
     @Autowired
     private RedisTemplate redisTemplate;
 
     private String NAME = "job.pool";
-    
+
     private BoundHashOperations getPool () {
         BoundHashOperations ops = redisTemplate.boundHashOps(NAME);
         return ops;
@@ -39,7 +39,6 @@ public class JobPool {
     /**
      * 获得任务
      * @param jobId
-     * @return
      */
     public Job getJob(Long jobId) {
         Object o = getPool().get(jobId);

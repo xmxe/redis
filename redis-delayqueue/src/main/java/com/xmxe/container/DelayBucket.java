@@ -44,7 +44,6 @@ public class DelayBucket {
 
     /**
      * 获得桶的名称
-     * @return
      */
     private String getThisBucketName() {
         int thisIndex = index.addAndGet(1);
@@ -55,7 +54,6 @@ public class DelayBucket {
     /**
      * 获得桶集合
      * @param bucketName
-     * @return
      */
     private BoundZSetOperations getBucket(String bucketName) {
         return redisTemplate.boundZSetOps(bucketName);
@@ -74,7 +72,6 @@ public class DelayBucket {
 
     /**
      * 获得最新的延期任务
-     * @return
      */
     public DelayJob getFirstDelayTime(Integer index) {
         String name = bucketNames.get(index);

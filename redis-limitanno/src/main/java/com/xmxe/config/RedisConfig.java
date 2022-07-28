@@ -17,8 +17,6 @@ public class RedisConfig {
 
 	/**
 	 * 修改 RedisTemplate 序列化方案
-	 * @param connectionFactory
-	 * @return
 	 */
 	@Bean
 	public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory) {

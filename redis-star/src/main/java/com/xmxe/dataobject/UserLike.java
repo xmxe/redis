@@ -16,26 +16,34 @@ import javax.persistence.GenerationType;
 @Data
 public class UserLike {
 
-    //主键id
+    // 主键id
+    @javax.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    //被点赞的用户的id
+    // 被点赞的用户的id
     private String likedUserId;
 
-    //点赞的用户的id
+    // 点赞的用户的id
     private String likedPostId;
 
-    //点赞的状态.默认未点赞
+    // 点赞的状态.默认未点赞
     private Integer status = LikedStatusEnum.UNLIKE.getCode();
 
-    public UserLike() {
-    }
+    public UserLike() {}
 
     public UserLike(String likedUserId, String likedPostId, Integer status) {
         this.likedUserId = likedUserId;
         this.likedPostId = likedPostId;
         this.status = status;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
     }
 }

@@ -17,24 +17,18 @@ import lombok.extern.slf4j.Slf4j;
 @AllArgsConstructor
 public class DelayJobHandler implements Runnable{
 
-    /**
-     * 延迟队列
-     */
+    // 延迟队列
     private DelayBucket delayBucket;
-    /**
-     * 任务池
-     */
+
+    // 任务池
     private JobPool jobPool;
-    
+
     private ReadyQueue readyQueue;
-    /**
-     * 索引
-     */
+
+    // 索引
     private int index;
 
-    /**
-     */
-    @Override 
+    @Override
     public void run() {
         log.info("定时任务开始执行");
         while (true) {
@@ -69,7 +63,7 @@ public class DelayJobHandler implements Runnable{
                     log.info("处理延时任务:{}", JSON.toJSONString(job));
                     // 延时任务
                     processDelayJob(delayJob,job);
-                } 
+                }
             } catch (Exception e) {
                 log.error("扫描DelayBucket出错：",e.getStackTrace());
                 sleep();
@@ -104,7 +98,7 @@ public class DelayJobHandler implements Runnable{
         // 移除delayBucket中的任务
         delayBucket.removeDelayTime(index,delayJob);
     }
-    
+
     private void sleep(){
         try {
             Thread.sleep(DelayConfig.SLEEP_TIME);

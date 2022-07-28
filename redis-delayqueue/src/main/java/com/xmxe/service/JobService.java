@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class JobService {
-    
+
     @Autowired
     private DelayBucket delayBucket;
-    
+
     @Autowired
     private ReadyQueue readyQueue;
 
@@ -32,7 +32,6 @@ public class JobService {
 
     /**
      * 获取
-     * @return
      */
     public Job getProcessJob(String topic) {
         // 拿到任务
@@ -49,7 +48,7 @@ public class JobService {
             delayJob.setDelayDate(System.currentTimeMillis() + job.getTtrTime());
 
             jobPool.addJob(job);
-            delayBucket.addDelayJob(delayJob);  
+            delayBucket.addDelayJob(delayJob);
         }
         return job;
     }
@@ -57,7 +56,6 @@ public class JobService {
     /**
      * 完成一个执行的任务
      * @param jobId
-     * @return
      */
     public void finishJob(Long jobId) {
         jobPool.removeDelayJob(jobId);
@@ -66,10 +64,9 @@ public class JobService {
     /**
      * 完成一个执行的任务
      * @param jobId
-     * @return
      */
     public void deleteJob(Long jobId) {
         jobPool.removeDelayJob(jobId);
     }
-    
+
 }

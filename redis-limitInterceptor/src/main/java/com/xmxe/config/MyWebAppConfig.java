@@ -3,10 +3,10 @@ package com.xmxe.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class MyWebAppConfig extends WebMvcConfigurerAdapter {
+public class MyWebAppConfig implements WebMvcConfigurer {
 	@Bean
 	IpUrlLimitInterceptor getIpUrlLimitInterceptor(){
 		return new IpUrlLimitInterceptor();
@@ -14,7 +14,8 @@ public class MyWebAppConfig extends WebMvcConfigurerAdapter {
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(getIpUrlLimitInterceptor()).addPathPatterns("/**");
-		super.addInterceptors(registry);
+		registry.addInterceptor(getIpUrlLimitInterceptor())
+				// 配置拦截的路径
+				.addPathPatterns("/**");
 	}
 }

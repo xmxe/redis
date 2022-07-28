@@ -5,9 +5,6 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * (Controller层)
- */
 @RestController
 public class StockController {
 
@@ -26,8 +23,6 @@ public class StockController {
 
 	/**
 	 * 获取初始的库存
-	 *
-	 * @return
 	 */
 	private int initStock(long commodityId) {
 		// dosomething 这里做一些初始化库存的操作

@@ -15,9 +15,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/**
- *
- **/
 @Component
 public class DelayTimer implements ApplicationListener <ContextRefreshedEvent> {
 
@@ -27,14 +24,14 @@ public class DelayTimer implements ApplicationListener <ContextRefreshedEvent> {
     private JobPool jobPool;
     @Autowired
     private ReadyQueue readyQueue;
-    
+
     @Value("${thread.size}")
     private int length;
-    
-    @Override 
+
+    @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
         ExecutorService executorService = new ThreadPoolExecutor(
-                length, 
+                length,
                 length,
                 0L, TimeUnit.MILLISECONDS,
                 new LinkedBlockingQueue <Runnable>());
@@ -47,6 +44,6 @@ public class DelayTimer implements ApplicationListener <ContextRefreshedEvent> {
                             readyQueue,
                             i));
         }
-        
+
     }
 }
