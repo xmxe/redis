@@ -3,9 +3,9 @@ package com.xmxe.util;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Component;
-import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -71,7 +71,8 @@ public class RedisTemplateUtil {
 			if (key.length == 1) {
 				redisTemplate.delete(key[0]);
 			} else {
-				redisTemplate.delete(CollectionUtils.arrayToList(key));
+				List<String> list = Arrays.asList(key);
+				redisTemplate.delete(list);
 			}
 		}
 	}
