@@ -60,6 +60,7 @@
 - [Redis 的过期数据会被立马删除么？](https://mp.weixin.qq.com/s/qJt0B9p0GeUkekK15xL-jw)
 - [面试官：有一种数据类型，Redis 要存两次，为什么](https://mp.weixin.qq.com/s/UEj2hQcoyhnu7CYGgR8OgA)
 - [面试官：大量请求 Redis 不存在的数据，从而打倒数据库，你有什么方案？](https://mp.weixin.qq.com/s/soF3F8YYSbynK2lyofGMAg)
+- [Redis是如何保证高效查询的？](https://mp.weixin.qq.com/s/xEYKp5ORPOFDXip6rmjqnQ)
 
 
 
