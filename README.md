@@ -198,6 +198,7 @@ Cluster集群
 - [Redis 分布式锁的正确实现原理演化历程与 Redisson 实战总结](https://mp.weixin.qq.com/s/PKGYoerpjWGeDzDE2iCFag)
 - [从零到一编码实现Redis分布式锁](https://mp.weixin.qq.com/s/fwpHS07LcLLe82_cGOUxKA)
 - [面试官问：Redis 分布式锁如何自动续期？](https://mp.weixin.qq.com/s/x9YFF4QtHrCu3abSQHEL-A)
+- [lock4j:基于Spring AOP 的声明式和编程式分布式锁，支持RedisTemplate、Redisson、Zookeeper](https://gitee.com/baomidou/lock4j)
 
   
 
