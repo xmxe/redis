@@ -35,37 +35,36 @@
 - [Redis 面试知识点总结！](https://mp.weixin.qq.com/s/KCBk_XYarpoEgW_QpBkLYg)
 - [这 40 道 Redis 面试题让你不再慌（附答案）](https://mp.weixin.qq.com/s/hGJJz5yCtfRkfccG9nYNjw)
 - [Redis夺命十二问，你能扛到第几问](https://mp.weixin.qq.com/s/bWBFcCnoJ05zSQe8_pNCig)
-- [Redis 的 8 大数据类型，写得非常好！](https://mp.weixin.qq.com/s/9Tzw3zoNmePyUc3o9BHumQ)
-- [美团二面： Redis 5 种基础数据结构？](https://mp.weixin.qq.com/s/SDde-hhB3DGXzmyb2n2x4A)
+- [Redis最佳实践：7个维度+43条使用规范，带你彻底玩转Redis](https://mp.weixin.qq.com/s/5m8RwxxxRS2QPyRn4uSaCQ)
+- [使用Redis，你必须知道的21个注意要点](https://mp.weixin.qq.com/s/BaZWxYfIR7HsRB3A_sVkHA)
 - [从应用到底层 36张图带你进入Redis世界](https://mp.weixin.qq.com/s/WqdOIqz46A5Af72J_Jkk8g)
+- [Redis规范你应该了解一下](https://mp.weixin.qq.com/s/jxLS1QZGio55Mk078VTL0g)
+- [看完后，我才明白Redis为什么默认16个数据库](https://mp.weixin.qq.com/s/Z5eBUHe62K6t_APgc6PTYQ)
+- [手写Redis服务端，从设计者的角度聊一聊Redis本身](https://mp.weixin.qq.com/s/5lNDbc9h1u2jlGfRwaVW6A)
+- [一口气说出 Redis 16 个常见使用场景 !](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
+- [面试官：大量请求 Redis 不存在的数据，从而打倒数据库，你有什么方案？](https://mp.weixin.qq.com/s/soF3F8YYSbynK2lyofGMAg)
+- [Redis是如何保证高效查询的？](https://mp.weixin.qq.com/s/xEYKp5ORPOFDXip6rmjqnQ)
 - [Redis为什么变慢了？一文讲透如何排查Redis性能问题 | 万字长文](https://mp.weixin.qq.com/s/s0hgRS2bmnYszA9OJxz56Q)
 - [Redis 突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
-- [Redis最佳实践：7个维度+43条使用规范，带你彻底玩转Redis](https://mp.weixin.qq.com/s/5m8RwxxxRS2QPyRn4uSaCQ)
+
+
+##### 为什么是单线程
 - [Redis 为什么用单线程模型？终于知道了！](https://mp.weixin.qq.com/s/SlHBKlfF6qlXde_83dM5Ug)
 - [为什么 Redis 单线程却能支撑高并发？](https://mp.weixin.qq.com/s/SunQ8BJjFfujNSEnqyWqpQ)
 - [深度解析单线程的 Redis 如何做到每秒数万 QPS 的超高处理能力！](https://mp.weixin.qq.com/s/4bSy5cld0oZg8gqNGuemZA)
 - [Redis不是一直号称单线程效率也很高吗，为什么又采用多线程了](https://mp.weixin.qq.com/s/SYUYvKCxsyMbdBsRrJOZqA)
 - [面试：Redis新版本开始引入多线程，谈谈你的看法？](https://mp.weixin.qq.com/s/YYrCeIEXHhSk7X4frU_oDg)
 - [Redis 新特性篇：多线程模型解读](https://mp.weixin.qq.com/s/XP-7CJ3OHxIiYg222wNVEg)
-- [使用Redis，你必须知道的21个注意要点](https://mp.weixin.qq.com/s/BaZWxYfIR7HsRB3A_sVkHA)
-- [redis 为什么把简单的字符串设计成 SDS？](https://mp.weixin.qq.com/s/tsa3llfRlnrdBmlIXIuj3A)
-- [Redis 内存满了怎么办？](https://mp.weixin.qq.com/s/-kKe_ss01CkLMRERyyjt1Q)
-- [内存耗尽后 Redis 会发生什么？](https://mp.weixin.qq.com/s/YqkVmIaDRV31-WrcW8K26g)
-- [Redis规范你应该了解一下](https://mp.weixin.qq.com/s/jxLS1QZGio55Mk078VTL0g)
-- [看完后，我才明白Redis为什么默认16个数据库](https://mp.weixin.qq.com/s/Z5eBUHe62K6t_APgc6PTYQ)
-- [手写Redis服务端，从设计者的角度聊一聊Redis本身](https://mp.weixin.qq.com/s/5lNDbc9h1u2jlGfRwaVW6A)
-- [一口气说出 Redis 16 个常见使用场景 !](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
-- [一文搞定Redis五大数据类型及使用场景](https://mp.weixin.qq.com/s/JxkCGZI0P6xhzD1nv99Bvg)
-- [Redis 过期 key 删除，那些不得不说的事情](https://mp.weixin.qq.com/s/iR8EgI9-p-BXjJEfTs3G7Q)
-- [Redis 的过期数据会被立马删除么？](https://mp.weixin.qq.com/s/qJt0B9p0GeUkekK15xL-jw)
+
+##### 数据结构
 - [面试官：有一种数据类型，Redis 要存两次，为什么](https://mp.weixin.qq.com/s/UEj2hQcoyhnu7CYGgR8OgA)
-- [面试官：大量请求 Redis 不存在的数据，从而打倒数据库，你有什么方案？](https://mp.weixin.qq.com/s/soF3F8YYSbynK2lyofGMAg)
-- [Redis是如何保证高效查询的？](https://mp.weixin.qq.com/s/xEYKp5ORPOFDXip6rmjqnQ)
+- [redis 为什么把简单的字符串设计成 SDS？](https://mp.weixin.qq.com/s/tsa3llfRlnrdBmlIXIuj3A)
+- [一文搞定Redis五大数据类型及使用场景](https://mp.weixin.qq.com/s/JxkCGZI0P6xhzD1nv99Bvg)
+- [Redis 的 8 大数据类型，写得非常好！](https://mp.weixin.qq.com/s/9Tzw3zoNmePyUc3o9BHumQ)
+- [美团二面： Redis 5 种基础数据结构？](https://mp.weixin.qq.com/s/SDde-hhB3DGXzmyb2n2x4A)
 
 
-
-
-#### Redis的过期策略
+#### Redis的key过期策略
 
 
 ```
@@ -84,9 +83,10 @@ Redis中同时使用了惰性过期和定期过期两种过期策略。
 因此，redis采取的是定期过期，每隔100ms就随机抽取一定数量的key来检查和删除的。但是呢，最后可能会有很多已经过期的key没被删除。这时候，redis采用惰性删除。在你获取某个key的时候，redis会检查一下，这个key如果设置了过期时间并且已经过期了，此时就会删除。
 但是，如果定期删除漏掉了很多过期的key，然后也没走惰性删除。就会有很多过期key积在内存内存，直接会导致内存爆的。或者有些时候，业务量大起来了，redis的key被大量使用，内存直接不够了，运维也忘记加大内存了。难道redis直接这样挂掉？不会的！Redis用8种内存淘汰策略保护自己~
 ```
+- [Redis 过期 key 删除，那些不得不说的事情](https://mp.weixin.qq.com/s/iR8EgI9-p-BXjJEfTs3G7Q)
+- [Redis 的过期数据会被立马删除么？](https://mp.weixin.qq.com/s/qJt0B9p0GeUkekK15xL-jw)
 
 #### Redis 内存淘汰策略
-
 
 ```
 volatile-lru：当内存不足以容纳新写入数据时，从设置了过期时间的key中使用LRU（最近最少使用）算法进行淘汰；
@@ -98,8 +98,11 @@ allkeys-random：当内存不足以容纳新写入数据时，从所有key中随
 volatile-ttl：当内存不足以容纳新写入数据时，在设置了过期时间的key中，根据过期时间进行淘汰，越早过期的优先被淘汰；
 noeviction：默认策略，当内存不足以容纳新写入数据时，新写入操作会报错。
 ```
+- [Redis 内存满了怎么办？](https://mp.weixin.qq.com/s/-kKe_ss01CkLMRERyyjt1Q)
+- [内存耗尽后 Redis 会发生什么？](https://mp.weixin.qq.com/s/YqkVmIaDRV31-WrcW8K26g)
 
-#### Redis高可用/持久化
+
+#### Redis持久化
 
 
 ```
@@ -147,7 +150,7 @@ Redis4.0开始支持RDB和AOF的混合持久化，就是内存快照以一定频
 - [彻底理解 Redis 的持久化和主从复制](https://mp.weixin.qq.com/s/5IBOKcoBxVoGSMrn3vBGOw)
 
 
-#### 主从
+#### Redis高可用
 
 
 ```
@@ -187,17 +190,31 @@ Cluster集群
 #### 分布式锁
 
 - [阿里面试官：分布式锁到底用Redis好？还是Zookeeper好？](https://mp.weixin.qq.com/s/5T0nrf5LBSqOiPd99OB3tw)
+
 - [分布式锁用 Redis 还是 Zookeeper？](https://mp.weixin.qq.com/s/_P3zWS1QzPdQp10Jb1bSOA)
+
 - [Redis分布式锁到底安全吗](https://mp.weixin.qq.com/s/O9XZxwAcrCY-ninASw0I5Q)
+
 - [Redis分布式锁深入探究](https://mp.weixin.qq.com/s/9SPMfKpv4iF_9m2F9ZTa3A)
+
 - [七种方案！探讨Redis分布式锁的正确使用姿势](https://mp.weixin.qq.com/s/LTS3MKBU2FbRivXyQJcptA)
+
 - [聊聊redis分布式锁的8大坑](https://mp.weixin.qq.com/s/vnVyvTeKvT_ZfMHr5_7CNg)
+
 - [这才叫细：带你深入理解Redis分布式锁](https://mp.weixin.qq.com/s/yUH8jH9NTPLk24J_BQ0JfQ)
+
+- [图解 Redis 分布式锁，写得太好了！](https://mp.weixin.qq.com/s/0GmtEI3DW-pCI21a1u10ng)
+
 - [RedisTemplate分布式锁演变、Redission分布式锁实现](https://mp.weixin.qq.com/s/42AOUuTsYzt4nj69sqK0RA)
+
 - [年轻人，看看 Redisson 分布式锁—可重入锁吧！太重要了](https://mp.weixin.qq.com/s/BlDsXWOcqpudORSiyI05Lg)
+
 - [Redis 分布式锁的正确实现原理演化历程与 Redisson 实战总结](https://mp.weixin.qq.com/s/PKGYoerpjWGeDzDE2iCFag)
+
 - [从零到一编码实现Redis分布式锁](https://mp.weixin.qq.com/s/fwpHS07LcLLe82_cGOUxKA)
+
 - [面试官问：Redis 分布式锁如何自动续期？](https://mp.weixin.qq.com/s/x9YFF4QtHrCu3abSQHEL-A)
+
 - [lock4j:基于Spring AOP 的声明式和编程式分布式锁，支持RedisTemplate、Redisson、Zookeeper](https://gitee.com/baomidou/lock4j)
 
   
