@@ -2,16 +2,16 @@
 
 | name                                                         | description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [base-redis-delay](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis 实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
-| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | [Spring Boot + Redis 实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig) |
-| [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis 解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
+| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [base-redis-delay](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
+| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | [Spring Boot + Redis实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig) |
+| [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
 | [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | [基于redis实现扣减库存的具体实现](https://www.jianshu.com/p/76bc0e963172) |
 | [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe) | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q) |
 | [redis-websocket](https://github.com/xmxe/redis/tree/master/redis-websocket) | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
 | [redis-searchfilter](https://github.com/xmxe/redis/tree/master/redis-searchfilter) | [springboot java+redis 实现简单实用的搜索栏热搜功能，不雅文字过滤功能。](https://mp.weixin.qq.com/s/MN172c64M7MWN57kTXHIgg) |
 | [redis-star](https://github.com/xmxe/redis/tree/master/redis-star) | [基于redis的点赞功能的实现](https://blog.csdn.net/qq_37618461/article/details/103821433) |
-| [redis-limitanno](https://github.com/xmxe/redis/tree/master/redis-limitanno) | [Redis 做接口限流，一个注解的事！](https://mp.weixin.qq.com/s/rzz2tgBBJpWz7gjmEfz2XQ) |
-| [redis-limitInterceptor](https://github.com/xmxe/redis/tree/master/redis-limitInterceptor) | [几行代码，搞定 SpringBoot 接口恶意刷新和暴力请求！](https://mp.weixin.qq.com/s/yKjRTWTt_5NAFLefrf-Ntw) |
+| [redis-limitanno](https://github.com/xmxe/redis/tree/master/redis-limitanno) | [Redis做接口限流，一个注解的事！](https://mp.weixin.qq.com/s/rzz2tgBBJpWz7gjmEfz2XQ) |
+| [redis-limitInterceptor](https://github.com/xmxe/redis/tree/master/redis-limitInterceptor) | [几行代码，搞定SpringBoot接口恶意刷新和暴力请求！](https://mp.weixin.qq.com/s/yKjRTWTt_5NAFLefrf-Ntw) |
 
 
 
@@ -28,40 +28,40 @@
 
 #### Redis知识点
 
-- [Redis 学习笔记一 简介](https://blog.csdn.net/weixin_44626569/article/details/89970593)
-- [Redis 学习笔记二 基础](https://blog.csdn.net/weixin_44626569/article/details/90043210)
+- [Redis学习笔记一 简介](https://blog.csdn.net/weixin_44626569/article/details/89970593)
+- [Redis学习笔记二 基础](https://blog.csdn.net/weixin_44626569/article/details/90043210)
 - [你还不了解Redis的发布/订阅功能与Redis的Stream吗](https://mp.weixin.qq.com/s/wjThHZT1edWmn31YZP9U7Q)
 - [妈妈再也不担心我面试被Redis问得脸都绿了](https://mp.weixin.qq.com/s/A8qQiLwE10j-eC_K8ylvzw)
-- [Redis 面试知识点总结！](https://mp.weixin.qq.com/s/KCBk_XYarpoEgW_QpBkLYg)
-- [这 40 道 Redis 面试题让你不再慌（附答案）](https://mp.weixin.qq.com/s/hGJJz5yCtfRkfccG9nYNjw)
+- [Redis面试知识点总结！](https://mp.weixin.qq.com/s/KCBk_XYarpoEgW_QpBkLYg)
+- [这40道Redis面试题让你不再慌（附答案）](https://mp.weixin.qq.com/s/hGJJz5yCtfRkfccG9nYNjw)
 - [Redis夺命十二问，你能扛到第几问](https://mp.weixin.qq.com/s/bWBFcCnoJ05zSQe8_pNCig)
 - [Redis最佳实践：7个维度+43条使用规范，带你彻底玩转Redis](https://mp.weixin.qq.com/s/5m8RwxxxRS2QPyRn4uSaCQ)
 - [使用Redis，你必须知道的21个注意要点](https://mp.weixin.qq.com/s/BaZWxYfIR7HsRB3A_sVkHA)
-- [从应用到底层 36张图带你进入Redis世界](https://mp.weixin.qq.com/s/WqdOIqz46A5Af72J_Jkk8g)
+- [从应用到底层36张图带你进入Redis世界](https://mp.weixin.qq.com/s/WqdOIqz46A5Af72J_Jkk8g)
 - [Redis规范你应该了解一下](https://mp.weixin.qq.com/s/jxLS1QZGio55Mk078VTL0g)
 - [看完后，我才明白Redis为什么默认16个数据库](https://mp.weixin.qq.com/s/Z5eBUHe62K6t_APgc6PTYQ)
 - [手写Redis服务端，从设计者的角度聊一聊Redis本身](https://mp.weixin.qq.com/s/5lNDbc9h1u2jlGfRwaVW6A)
-- [一口气说出 Redis 16 个常见使用场景 !](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
-- [面试官：大量请求 Redis 不存在的数据，从而打倒数据库，你有什么方案？](https://mp.weixin.qq.com/s/soF3F8YYSbynK2lyofGMAg)
+- [一口气说出Redis16个常见使用场景!](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
+- [面试官：大量请求Redis不存在的数据，从而打倒数据库，你有什么方案？](https://mp.weixin.qq.com/s/soF3F8YYSbynK2lyofGMAg)
 - [Redis是如何保证高效查询的？](https://mp.weixin.qq.com/s/xEYKp5ORPOFDXip6rmjqnQ)
-- [Redis为什么变慢了？一文讲透如何排查Redis性能问题 | 万字长文](https://mp.weixin.qq.com/s/s0hgRS2bmnYszA9OJxz56Q)
-- [Redis 突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
+- [Redis为什么变慢了？一文讲透如何排查Redis性能问题|万字长文](https://mp.weixin.qq.com/s/s0hgRS2bmnYszA9OJxz56Q)
+- [Redis突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
 
 
 ##### 为什么是单线程
-- [Redis 为什么用单线程模型？终于知道了！](https://mp.weixin.qq.com/s/SlHBKlfF6qlXde_83dM5Ug)
-- [为什么 Redis 单线程却能支撑高并发？](https://mp.weixin.qq.com/s/SunQ8BJjFfujNSEnqyWqpQ)
-- [深度解析单线程的 Redis 如何做到每秒数万 QPS 的超高处理能力！](https://mp.weixin.qq.com/s/4bSy5cld0oZg8gqNGuemZA)
+- [Redis为什么用单线程模型？终于知道了！](https://mp.weixin.qq.com/s/SlHBKlfF6qlXde_83dM5Ug)
+- [为什么Redis单线程却能支撑高并发？](https://mp.weixin.qq.com/s/SunQ8BJjFfujNSEnqyWqpQ)
+- [深度解析单线程的Redis如何做到每秒数万QPS的超高处理能力！](https://mp.weixin.qq.com/s/4bSy5cld0oZg8gqNGuemZA)
 - [Redis不是一直号称单线程效率也很高吗，为什么又采用多线程了](https://mp.weixin.qq.com/s/SYUYvKCxsyMbdBsRrJOZqA)
 - [面试：Redis新版本开始引入多线程，谈谈你的看法？](https://mp.weixin.qq.com/s/YYrCeIEXHhSk7X4frU_oDg)
-- [Redis 新特性篇：多线程模型解读](https://mp.weixin.qq.com/s/XP-7CJ3OHxIiYg222wNVEg)
+- [Redis新特性篇：多线程模型解读](https://mp.weixin.qq.com/s/XP-7CJ3OHxIiYg222wNVEg)
 
 ##### 数据结构
-- [面试官：有一种数据类型，Redis 要存两次，为什么](https://mp.weixin.qq.com/s/UEj2hQcoyhnu7CYGgR8OgA)
-- [redis 为什么把简单的字符串设计成 SDS？](https://mp.weixin.qq.com/s/tsa3llfRlnrdBmlIXIuj3A)
+- [面试官：有一种数据类型，Redis要存两次，为什么](https://mp.weixin.qq.com/s/UEj2hQcoyhnu7CYGgR8OgA)
+- [redis为什么把简单的字符串设计成SDS？](https://mp.weixin.qq.com/s/tsa3llfRlnrdBmlIXIuj3A)
 - [一文搞定Redis五大数据类型及使用场景](https://mp.weixin.qq.com/s/JxkCGZI0P6xhzD1nv99Bvg)
-- [Redis 的 8 大数据类型，写得非常好！](https://mp.weixin.qq.com/s/9Tzw3zoNmePyUc3o9BHumQ)
-- [美团二面： Redis 5 种基础数据结构？](https://mp.weixin.qq.com/s/SDde-hhB3DGXzmyb2n2x4A)
+- [Redis的8大数据类型，写得非常好！](https://mp.weixin.qq.com/s/9Tzw3zoNmePyUc3o9BHumQ)
+- [美团二面：Redis5种基础数据结构？](https://mp.weixin.qq.com/s/SDde-hhB3DGXzmyb2n2x4A)
 
 
 #### Redis的key过期策略
@@ -83,10 +83,10 @@ Redis中同时使用了惰性过期和定期过期两种过期策略。
 因此，redis采取的是定期过期，每隔100ms就随机抽取一定数量的key来检查和删除的。但是呢，最后可能会有很多已经过期的key没被删除。这时候，redis采用惰性删除。在你获取某个key的时候，redis会检查一下，这个key如果设置了过期时间并且已经过期了，此时就会删除。
 但是，如果定期删除漏掉了很多过期的key，然后也没走惰性删除。就会有很多过期key积在内存内存，直接会导致内存爆的。或者有些时候，业务量大起来了，redis的key被大量使用，内存直接不够了，运维也忘记加大内存了。难道redis直接这样挂掉？不会的！Redis用8种内存淘汰策略保护自己~
 ```
-- [Redis 过期 key 删除，那些不得不说的事情](https://mp.weixin.qq.com/s/iR8EgI9-p-BXjJEfTs3G7Q)
-- [Redis 的过期数据会被立马删除么？](https://mp.weixin.qq.com/s/qJt0B9p0GeUkekK15xL-jw)
+- [Redis过期key删除，那些不得不说的事情](https://mp.weixin.qq.com/s/iR8EgI9-p-BXjJEfTs3G7Q)
+- [Redis的过期数据会被立马删除么？](https://mp.weixin.qq.com/s/qJt0B9p0GeUkekK15xL-jw)
 
-#### Redis 内存淘汰策略
+#### Redis内存淘汰策略
 
 ```
 volatile-lru：当内存不足以容纳新写入数据时，从设置了过期时间的key中使用LRU（最近最少使用）算法进行淘汰；
@@ -98,16 +98,16 @@ allkeys-random：当内存不足以容纳新写入数据时，从所有key中随
 volatile-ttl：当内存不足以容纳新写入数据时，在设置了过期时间的key中，根据过期时间进行淘汰，越早过期的优先被淘汰；
 noeviction：默认策略，当内存不足以容纳新写入数据时，新写入操作会报错。
 ```
-- [Redis 内存满了怎么办？](https://mp.weixin.qq.com/s/-kKe_ss01CkLMRERyyjt1Q)
-- [内存耗尽后 Redis 会发生什么？](https://mp.weixin.qq.com/s/YqkVmIaDRV31-WrcW8K26g)
+- [Redis内存满了怎么办？](https://mp.weixin.qq.com/s/-kKe_ss01CkLMRERyyjt1Q)
+- [内存耗尽后Redis会发生什么？](https://mp.weixin.qq.com/s/YqkVmIaDRV31-WrcW8K26g)
 
 
 #### Redis持久化
 
 
 ```
-AOF 持久化
-AOF（append only file） 持久化，采用日志的形式来记录每个写操作，追加到AOF文件的末尾。Redis默认情况是不开启AOF的。重启时再重新执行AOF文件中的命令来恢复数据。它主要解决数据持久化的实时性问题。AOF是执行完命令后才记录日志的。为什么不先记录日志再执行命令呢？这是因为Redis在向AOF记录日志时，不会先对这些命令进行语法检查，如果先记录日志再执行命令，日志中可能记录了错误的命令，Redis使用日志回复数据时，可能会出错。正是因为执行完命令后才记录日志，所以不会阻塞当前的写操作。但是会存在两个风险：更执行完命令还没记录日志时，宕机了会导致数据丢失,AOF不会阻塞当前命令，但是可能会阻塞下一个操作。这两个风险最好的解决方案是折中
+AOF持久化
+AOF（append only file）持久化，采用日志的形式来记录每个写操作，追加到AOF文件的末尾。Redis默认情况是不开启AOF的。重启时再重新执行AOF文件中的命令来恢复数据。它主要解决数据持久化的实时性问题。AOF是执行完命令后才记录日志的。为什么不先记录日志再执行命令呢？这是因为Redis在向AOF记录日志时，不会先对这些命令进行语法检查，如果先记录日志再执行命令，日志中可能记录了错误的命令，Redis使用日志回复数据时，可能会出错。正是因为执行完命令后才记录日志，所以不会阻塞当前的写操作。但是会存在两个风险：更执行完命令还没记录日志时，宕机了会导致数据丢失,AOF不会阻塞当前命令，但是可能会阻塞下一个操作。这两个风险最好的解决方案是折中
 妙用AOF机制的三种写回策略(appendfsync)：
 always:同步写回，每个子命令执行完，都立即将日志写回磁盘。
 everysec:每个命令执行完，只是先把日志写到AOF内存缓冲区，每隔一秒同步到磁盘。
@@ -118,12 +118,12 @@ AOF的优点：数据的一致性和完整性更高，秒级数据丢失。
 AOF的缺点：相同的数据集，AOF文件体积大于RDB文件。数据恢复也比较慢。
 
 RDB
-因为AOF持久化方式，如果操作日志非常多的话，Redis恢复就很慢。有没有在宕机快速恢复的方法呢，有的，RDB！RDB，就是把内存数据以快照的形式保存到磁盘上。和AOF相比，它记录的是某一时刻的数据，，并不是操作。什么是快照?可以这样理解，给当前时刻的数据，拍一张照片，然后保存下来。RDB持久化，是指在指定的时间间隔内，执行指定次数的写操作，将内存中的数据集快照写入磁盘中，它是Redis默认的持久化方式。执行完操作后，在指定目录下会生成一个dump.rdb文件，Redis 重启的时候，通过加载dump.rdb文件来恢复数据。RDB触发机制主要有以下几种：
+因为AOF持久化方式，如果操作日志非常多的话，Redis恢复就很慢。有没有在宕机快速恢复的方法呢，有的，RDB！RDB，就是把内存数据以快照的形式保存到磁盘上。和AOF相比，它记录的是某一时刻的数据，，并不是操作。什么是快照?可以这样理解，给当前时刻的数据，拍一张照片，然后保存下来。RDB持久化，是指在指定的时间间隔内，执行指定次数的写操作，将内存中的数据集快照写入磁盘中，它是Redis默认的持久化方式。执行完操作后，在指定目录下会生成一个dump.rdb文件，Redis重启的时候，通过加载dump.rdb文件来恢复数据。RDB触发机制主要有以下几种：
 1.手动触发
-save(同步，会阻塞当前redis服务器) bgsave(异步，redis执行fork操作创建子进程)
+save(同步，会阻塞当前redis服务器)bgsave(异步，redis执行fork操作创建子进程)
 2.自动触发(save m n)m秒内数据集存在n次修改时，自动触发bgsave
 
-RDB通过bgsave命令的执行全量快照，可以避免阻塞主线程。basave命令会fork一个子进程，然后该子进程会负责创建RDB文件，而服务器进程会继续处理命令。请求快照时，数据能修改嘛？  Redis接住操作系统的写时复制技术（copy-on-write，COW）,在执行快照的同时，正常处理写操作。虽然bgsave执行不会阻塞主线程，但是频繁执行全量快照也会带来性能开销。比如bgsave子进程需要通过fork操作从主线程创建出来，创建后不会阻塞主线程，但是创建过程是会阻塞主线程的。可以做增量快照。
+RDB通过bgsave命令的执行全量快照，可以避免阻塞主线程。basave命令会fork一个子进程，然后该子进程会负责创建RDB文件，而服务器进程会继续处理命令。请求快照时，数据能修改嘛？Redis接入操作系统的写时复制技术（copy-on-write，COW）,在执行快照的同时，正常处理写操作。虽然bgsave执行不会阻塞主线程，但是频繁执行全量快照也会带来性能开销。比如bgsave子进程需要通过fork操作从主线程创建出来，创建后不会阻塞主线程，但是创建过程是会阻塞主线程的。可以做增量快照。
 RDB的优点：与AOF相比，恢复大数据集的时候会更快，它适合大规模的数据恢复场景，如备份，全量复制等
 RDB的缺点：没办法做到实时持久化/秒级持久化。
 Redis4.0开始支持RDB和AOF的混合持久化，就是内存快照以一定频率执行，两次快照之间，再使用AOF记录这期间的所有命令操作。
@@ -134,20 +134,20 @@ Redis4.0开始支持RDB和AOF的混合持久化，就是内存快照以一定频
 如果只使用AOF，优先使用everysec的写回策略。
 
 混合持久化
-既然 RDB 与 AOF 持久化都存在各自的缺点，那么有没有一种更好的持久化方式？
-接下来要介绍的是混合持久化。其实就是 RDB 与 AOF 的混合模式，这是 Redis4 之后新增的。
+既然RDB与AOF持久化都存在各自的缺点，那么有没有一种更好的持久化方式？
+接下来要介绍的是混合持久化。其实就是RDB与AOF的混合模式，这是Redis4之后新增的。
 1、持久化方式
-混合持久化是通过 aof-use-rdb-preamble 参数来开启的。它的操作方式是这样的，在写入的时候先把数据以 RDB 的形式写入文件的开头，再将后续的写命令以 AOF 的格式追加到文件中。这样既能保证数据恢复时的速度，同时又能减少数据丢失的风险。
+混合持久化是通过aof-use-rdb-preamble参数来开启的。它的操作方式是这样的，在写入的时候先把数据以RDB的形式写入文件的开头，再将后续的写命令以AOF的格式追加到文件中。这样既能保证数据恢复时的速度，同时又能减少数据丢失的风险。
 2、文件恢复
-那么混合持久化中是如何来进行数据恢复的呢？在 Redis 重启时，先加载 RDB 的内容，然后再重放增量 AOF 格式命令。这样就避免了 AOF 持久化时的全量加载，从而使加载速率得到大幅提升。
+那么混合持久化中是如何来进行数据恢复的呢？在Redis重启时，先加载RDB的内容，然后再重放增量AOF格式命令。这样就避免了AOF持久化时的全量加载，从而使加载速率得到大幅提升。
 
 ```
 
 - [同样是持久化，竟然有这么大的差别！](https://mp.weixin.qq.com/s/SVbVwHOAwL1RX0fa-rYGxg)
-- [如何让 Redis 更持久](https://mp.weixin.qq.com/s/G3ct5tWox5Qt4tLUDEpRuw)
-- [Redis 宕机，数据丢了](https://mp.weixin.qq.com/s/RxhaZFnMAf7bAgYUtTGLuA)
-- [小伙用 12 张图讲明白了 Redis 持久化！](https://mp.weixin.qq.com/s/q7KEOA2Dy2Q5QpDX8FkPjg)
-- [彻底理解 Redis 的持久化和主从复制](https://mp.weixin.qq.com/s/5IBOKcoBxVoGSMrn3vBGOw)
+- [如何让Redis更持久](https://mp.weixin.qq.com/s/G3ct5tWox5Qt4tLUDEpRuw)
+- [Redis宕机，数据丢了](https://mp.weixin.qq.com/s/RxhaZFnMAf7bAgYUtTGLuA)
+- [小伙用12张图讲明白了Redis持久化！](https://mp.weixin.qq.com/s/q7KEOA2Dy2Q5QpDX8FkPjg)
+- [彻底理解Redis的持久化和主从复制](https://mp.weixin.qq.com/s/5IBOKcoBxVoGSMrn3vBGOw)
 
 
 #### Redis高可用
@@ -163,70 +163,58 @@ Redis4.0开始支持RDB和AOF的混合持久化，就是内存快照以一定频
 哨兵之间还会相互监控，从而达到高可用。
 
 故障切换的过程是怎样的呢
-假设主服务器宕机，哨兵1先检测到这个结果，系统并不会马上进行 failover 过程，仅仅是哨兵1主观的认为主服务器不可用，这个现象成为主观下线。当后面的哨兵也检测到主服务器不可用，并且数量达到一定值时，那么哨兵之间就会进行一次投票，投票的结果由一个哨兵发起，进行 failover 操作。切换成功后，就会通过发布订阅模式，让各个哨兵把自己监控的从服务器实现切换主机，这个过程称为客观下线。这样对于客户端而言，一切都是透明的。
+假设主服务器宕机，哨兵1先检测到这个结果，系统并不会马上进行failover过程，仅仅是哨兵1主观的认为主服务器不可用，这个现象成为主观下线。当后面的哨兵也检测到主服务器不可用，并且数量达到一定值时，那么哨兵之间就会进行一次投票，投票的结果由一个哨兵发起，进行failover操作。切换成功后，就会通过发布订阅模式，让各个哨兵把自己监控的从服务器实现切换主机，这个过程称为客观下线。这样对于客户端而言，一切都是透明的。
 
 哨兵的工作模式如下：
-每个Sentinel以每秒钟一次的频率向它所知的Master，Slave以及其他Sentinel实例发送一个 PING命令。
-如果一个实例（instance）距离最后一次有效回复 PING 命令的时间超过 down-after-milliseconds 选项所指定的值， 则这个实例会被 Sentinel标记为主观下线。如果一个Master被标记为主观下线，则正在监视这个Master的所有 Sentinel 要以每秒一次的频率确认Master的确进入了主观下线状态。当有足够数量的 Sentinel（大于等于配置文件指定的值）在指定的时间范围内确认Master的确进入了主观下线状态， 则Master会被标记为客观下线。在一般情况下， 每个 Sentinel 会以每10秒一次的频率向它已知的所有Master，Slave发送 INFO 命令。
-当Master被 Sentinel 标记为客观下线时，Sentinel 向下线的 Master 的所有 Slave 发送 INFO 命令的频率会从 10 秒一次改为每秒一次，若没有足够数量的 Sentinel同意Master已经下线， Master的客观下线状态就会被移除；若Master 重新向 Sentinel 的 PING 命令返回有效回复， Master 的主观下线状态就会被移除。
+每个Sentinel以每秒钟一次的频率向它所知的Master，Slave以及其他Sentinel实例发送一个PING命令。
+如果一个实例（instance）距离最后一次有效回复PING命令的时间超过down-after-milliseconds选项所指定的值，则这个实例会被Sentinel标记为主观下线。如果一个Master被标记为主观下线，则正在监视这个Master的所有Sentinel要以每秒一次的频率确认Master的确进入了主观下线状态。当有足够数量的Sentinel（大于等于配置文件指定的值）在指定的时间范围内确认Master的确进入了主观下线状态，则Master会被标记为客观下线。在一般情况下，每个Sentinel会以每10秒一次的频率向它已知的所有Master，Slave发送INFO命令。
+当Master被Sentinel标记为客观下线时，Sentinel向下线的Master的所有Slave发送INFO命令的频率会从10秒一次改为每秒一次，若没有足够数量的Sentinel同意Master已经下线，Master的客观下线状态就会被移除；若Master重新向Sentinel的PING命令返回有效回复，Master的主观下线状态就会被移除。
 
 Cluster集群
 哨兵解决和主从不能自动故障恢复的问题，但是同时也存在难以扩容以及单机存储、读写能力受限的问题，并且集群之前都是一台redis都是全量的数据，这样所有的redis都冗余一份，就会大大消耗内存空间。集群模式实现了Redis数据的分布式存储，实现数据的分片，每个redis节点存储不同的内容，并且解决了在线的节点收缩（下线）和扩容（上线）问题。集群模式真正意义上实现了系统的高可用和高性能，但是集群同时进一步使系统变得越来越复杂，接下来我们来详细的了解集群的运作原理。
 ```
 
-- [Redis 主库宕机如何快速恢复](https://mp.weixin.qq.com/s/PA31mNTzlQ2EGYEXfWagXQ)
+- [Redis主库宕机如何快速恢复](https://mp.weixin.qq.com/s/PA31mNTzlQ2EGYEXfWagXQ)
 - [Redis官方的高可用性解决方案](https://mp.weixin.qq.com/s?__biz=Mzg2MDYzODI5Nw==&mid=2247494325&idx=1&sn=0458cd40672c1f3918efb47963e56c9c&source=41#wechat_redirect)
 - [一文把Redis主从复制、哨兵、Cluster三种模式摸透](https://mp.weixin.qq.com/s/BPcis9rPiWosFid5w0M40A)
-- [Redis主从、哨兵、 Cluster集群一锅端！](https://mp.weixin.qq.com/s/U_5Tla4_XzlJsq3uRI2ifA)
+- [Redis主从、哨兵、Cluster集群一锅端！](https://mp.weixin.qq.com/s/U_5Tla4_XzlJsq3uRI2ifA)
 - [Redis的主从复制是如何做的？复制过程中也会产生各种问题](https://mp.weixin.qq.com/s/I3GimkIf27DL1uRqxImKWA)
 - [Redis中主、从库宕机如何恢复？](https://mp.weixin.qq.com/s/oRcOPBHwbimFak6CtooHEg)
-- [Redis 高可用篇：你管这叫主从架构数据同步原理？](https://mp.weixin.qq.com/s/NEUdCfRtHma3mkJqFKym5A)
+- [Redis高可用篇：你管这叫主从架构数据同步原理？](https://mp.weixin.qq.com/s/NEUdCfRtHma3mkJqFKym5A)
 - [如何从0到1构建一个稳定、高性能的Redis集群？](https://mp.weixin.qq.com/s/ZXz2IzbQjQJzCq_hkpkuEg)
-- [4 种 Redis 集群方案介绍 + 优缺点对比](https://mp.weixin.qq.com/s/Po85M418zvos3pHev2q0Tg)
-- [详细剖析 Redis 三种集群策略](https://mp.weixin.qq.com/s/M1RymGVUqhQG0KnKupnDXQ)
+- [4种Redis集群方案介绍+优缺点对比](https://mp.weixin.qq.com/s/Po85M418zvos3pHev2q0Tg)
+- [详细剖析Redis三种集群策略](https://mp.weixin.qq.com/s/M1RymGVUqhQG0KnKupnDXQ)
 
 
 
 #### 分布式锁
 
 - [阿里面试官：分布式锁到底用Redis好？还是Zookeeper好？](https://mp.weixin.qq.com/s/5T0nrf5LBSqOiPd99OB3tw)
-
-- [分布式锁用 Redis 还是 Zookeeper？](https://mp.weixin.qq.com/s/_P3zWS1QzPdQp10Jb1bSOA)
-
+- [分布式锁用Redis还是Zookeeper？](https://mp.weixin.qq.com/s/_P3zWS1QzPdQp10Jb1bSOA)
 - [Redis分布式锁到底安全吗](https://mp.weixin.qq.com/s/O9XZxwAcrCY-ninASw0I5Q)
-
 - [Redis分布式锁深入探究](https://mp.weixin.qq.com/s/9SPMfKpv4iF_9m2F9ZTa3A)
-
 - [七种方案！探讨Redis分布式锁的正确使用姿势](https://mp.weixin.qq.com/s/LTS3MKBU2FbRivXyQJcptA)
-
 - [聊聊redis分布式锁的8大坑](https://mp.weixin.qq.com/s/vnVyvTeKvT_ZfMHr5_7CNg)
-
 - [这才叫细：带你深入理解Redis分布式锁](https://mp.weixin.qq.com/s/yUH8jH9NTPLk24J_BQ0JfQ)
-
-- [图解 Redis 分布式锁，写得太好了！](https://mp.weixin.qq.com/s/0GmtEI3DW-pCI21a1u10ng)
-
+- [图解Redis分布式锁，写得太好了！](https://mp.weixin.qq.com/s/0GmtEI3DW-pCI21a1u10ng)
 - [RedisTemplate分布式锁演变、Redission分布式锁实现](https://mp.weixin.qq.com/s/42AOUuTsYzt4nj69sqK0RA)
-
-- [年轻人，看看 Redisson 分布式锁—可重入锁吧！太重要了](https://mp.weixin.qq.com/s/BlDsXWOcqpudORSiyI05Lg)
-
-- [Redis 分布式锁的正确实现原理演化历程与 Redisson 实战总结](https://mp.weixin.qq.com/s/PKGYoerpjWGeDzDE2iCFag)
-
+- [年轻人，看看Redisson分布式锁—可重入锁吧！太重要了](https://mp.weixin.qq.com/s/BlDsXWOcqpudORSiyI05Lg)
+- [Redis分布式锁的正确实现原理演化历程与Redisson实战总结](https://mp.weixin.qq.com/s/PKGYoerpjWGeDzDE2iCFag)
 - [从零到一编码实现Redis分布式锁](https://mp.weixin.qq.com/s/fwpHS07LcLLe82_cGOUxKA)
+- [面试官问：Redis分布式锁如何自动续期？](https://mp.weixin.qq.com/s/x9YFF4QtHrCu3abSQHEL-A)
+- [新来个技术总监，这Redis分布式锁设计的真漂亮！](https://mp.weixin.qq.com/s/NyGzKF2hZnS-6UnPxbFXcg)
+- [lock4j:基于SpringAOP的声明式和编程式分布式锁，支持RedisTemplate、Redisson、Zookeeper](https://gitee.com/baomidou/lock4j)
 
-- [面试官问：Redis 分布式锁如何自动续期？](https://mp.weixin.qq.com/s/x9YFF4QtHrCu3abSQHEL-A)
-
-- [lock4j:基于Spring AOP 的声明式和编程式分布式锁，支持RedisTemplate、Redisson、Zookeeper](https://gitee.com/baomidou/lock4j)
-
-  
 
 #### 业务结合
 
 - [手把手教你在学会Docker安装Redis镜像](https://mp.weixin.qq.com/s/XYwDWnQ6KFyPiClmngePQA)
-- [Redis 到底是怎么实现“附近的人”这个功能的呢？](https://mp.weixin.qq.com/s/HVJLoRqUulLyCoNvamBSgw)
-- [SpringBoot + Redis：模拟 10w 人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw)
+- [Redis到底是怎么实现“附近的人”这个功能的呢？](https://mp.weixin.qq.com/s/HVJLoRqUulLyCoNvamBSgw)
+- [SpringBoot+Redis：模拟10w人的秒杀抢单！](https://mp.weixin.qq.com/s/2hsjyUpDUqC4bVSAe36Gyw)
 - [电商红包雨是如何实现的？](https://mp.weixin.qq.com/s/uehjf3EXb107Dy6wnO34qQ)
 - [永远不要使用Redis过期监听实现定时任务](https://mp.weixin.qq.com/s/4bgQrYm4i7KdSLFKGvsOIA)
-- [如何用 Redis 统计独立用户访问量？](https://mp.weixin.qq.com/s/oQXYKjKb0XqAJnO-m5uqOw)
+- [如何用Redis统计独立用户访问量？](https://mp.weixin.qq.com/s/oQXYKjKb0XqAJnO-m5uqOw)
+- [面试官：Redis如何实现每周热评功能？说说思路！](https://mp.weixin.qq.com/s/Guq3NXRw-Bk60hElYiO0_w)
 
 
 #### 命令
@@ -241,7 +229,7 @@ Cluster集群
 
 
 
-#### 阿里官方 Redis 开发规范
+#### 阿里官方Redis开发规范
 
 ```
 一、键值设计
@@ -274,12 +262,12 @@ redis不是垃圾桶，建议使用expire设置过期时间(条件允许可以�
 3、合理使用select
 redis的多数据库较弱，使用数字进行区分，很多客户端支持较差，同时多业务用多数据库实际还是单线程处理，会有干扰。
 4、使用批量操作提高效率
-原生命令：例如mget、mset。非原生命令：可以使用pipeline提高效率。但要注意控制一次批量操作的元素个数 (例如500以内，实际也和元素字节数有关)。
+原生命令：例如mget、mset。非原生命令：可以使用pipeline提高效率。但要注意控制一次批量操作的元素个数(例如500以内，实际也和元素字节数有关)。
 注意两者不同：原生是原子操作，pipeline是非原子操作。pipeline可以打包不同的命令，原生做不到,pipeline需要客户端和服务端同时支持。
 5、不建议过多使用Redis事务功能
 Redis的事务功能较弱(不支持回滚)，而且集群版本(自研和官方)要求一次事务操作的key必须在一个slot上(可以使用hashtag功能解决)
 6、Redis集群版本在使用Lua上有特殊要求
-①所有key都应该由 KEYS 数组来传递，redis.call/pcall 里面调用的redis命令，key的位置，必须是KEYS array, 否则直接返回error，"-ERR bad lua script for redis cluster, all the keys that the script uses should be passed using the KEYS arrayrn"
+①所有key都应该由KEYS数组来传递，redis.call/pcall里面调用的redis命令，key的位置，必须是KEYS array,否则直接返回error，"-ERR bad lua script for redis cluster, all the keys that the script uses should be passed using the KEYS arrayrn"
 ②所有key，必须在1个slot上，否则直接返回error, "-ERR eval/evalsha command keys must in same slotrn"
 7、monitor命令
 必要情况下使用monitor命令时，要注意不要长时间使用。
@@ -321,7 +309,7 @@ noeviction：不会剔除任何数据，拒绝所有写入操作并返回客户�
 
 五、删除bigkey
 下面操作可以使用pipeline加速。
-redis 4.0已经支持key的异步删除，欢迎使用。
+redis4.0已经支持key的异步删除，欢迎使用。
 1、Hash删除: hscan + hdel
 public void delBigHash(String host, int port, String password, String bigHashKey) {
     Jedis jedis = new Jedis(host, port);
