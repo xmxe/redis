@@ -3,7 +3,7 @@
 | name                                                         | description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [base-redis-delay](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
-| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | [Spring Boot + Redis实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig) |
+| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | [Spring Boot + Redis实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig)<br>[Spring Boot加一个注解，轻松实现Redis分布式锁](https://mp.weixin.qq.com/s/qrIsjtvD4DNIHObKG1Jckg) |
 | [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
 | [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | [基于redis实现扣减库存的具体实现](https://www.jianshu.com/p/76bc0e963172) |
 | [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe) | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q) |
