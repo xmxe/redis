@@ -26,6 +26,7 @@
 		<module>redis-star</module>
 		<module>redis-limitanno</module>
 		<module>redis-limitInterceptor</module>
+		<module>redis-accesslimit</module>
 	</modules>
 
 	<dependencies>
