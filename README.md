@@ -25,6 +25,11 @@
 - [Redis命令（连接、服务器）](https://blog.csdn.net/weixin_44626569/article/details/90244145)
 
 
+#### 客户端
+
+- [Jedis使用技巧](https://mp.weixin.qq.com/s/XRRmiWXEgpKmf04Rp48l_Q)
+- [Redis实战之Lettuce使用技巧详解](https://mp.weixin.qq.com/s/6NYYIaLOiGoii_3tFpjnmg)
+- [Redis实战之Redisson使用技巧详解](https://mp.weixin.qq.com/s/DRflugAuAV6_jMRFXpWFpw)
 
 
 #### Redis知识点
@@ -47,6 +52,7 @@
 - [Redis是如何保证高效查询的？](https://mp.weixin.qq.com/s/xEYKp5ORPOFDXip6rmjqnQ)
 - [Redis为什么变慢了？一文讲透如何排查Redis性能问题|万字长文](https://mp.weixin.qq.com/s/s0hgRS2bmnYszA9OJxz56Q)
 - [Redis突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
+- [如何解决Redis数据倾斜、热点等问题](https://mp.weixin.qq.com/s/m2tprZGffzkxHcmprbLZnw)
 
 
 ##### 为什么是单线程
@@ -216,6 +222,7 @@ Cluster集群
 - [永远不要使用Redis过期监听实现定时任务](https://mp.weixin.qq.com/s/4bgQrYm4i7KdSLFKGvsOIA)
 - [如何用Redis统计独立用户访问量？](https://mp.weixin.qq.com/s/oQXYKjKb0XqAJnO-m5uqOw)
 - [面试官：Redis如何实现每周热评功能？说说思路！](https://mp.weixin.qq.com/s/Guq3NXRw-Bk60hElYiO0_w)
+- [Redis实现微博好友功能微服务（关注，取关，共同关注）](https://mp.weixin.qq.com/s/GQsC6uVDo5Hxr92Zkcf8Qw)
 
 
 #### 命令
