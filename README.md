@@ -53,6 +53,7 @@
 - [Redis为什么变慢了？一文讲透如何排查Redis性能问题|万字长文](https://mp.weixin.qq.com/s/s0hgRS2bmnYszA9OJxz56Q)
 - [Redis突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
 - [如何解决Redis数据倾斜、热点等问题](https://mp.weixin.qq.com/s/m2tprZGffzkxHcmprbLZnw)
+- [这次彻底搞懂Redis，超详细总结！](https://mp.weixin.qq.com/s/M-kj7dk4Ku_upDWzxs-ttw)
 
 
 ##### 为什么是单线程
