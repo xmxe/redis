@@ -6,6 +6,7 @@
 	<artifactId>redis-delayqueue</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	<description>Spring Boot + Redis实现延时队列</description>
 	<name>redis-delayqueue</name>
 
 	<parent>
@@ -13,14 +14,5 @@
 		<artifactId>redis</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>

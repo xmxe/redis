@@ -3,16 +3,17 @@
 | name                                                                                       | description                                                  |
 |--------------------------------------------------------------------------------------------| ------------------------------------------------------------ |
 | [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue)             | [base-redis-delay](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
-| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock)   | [Spring Boot + Redis实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig)<br>[Spring Boot加一个注解，轻松实现Redis分布式锁](https://mp.weixin.qq.com/s/qrIsjtvD4DNIHObKG1Jckg) |
+| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock)   | [Spring Boot + Redis实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig)<br>[Spring Boot加一个注解，轻松实现Redis分布式锁](https://mp.weixin.qq.com/s/qrIsjtvD4DNIHObKG1Jckg)<br>[SpringBoot整合Redis实现分布式缓存、分布式锁](https://mp.weixin.qq.com/s/jDDkDP4UOkzP95PLAqGPZg) |
 | [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit)                 | [SpringBoot + Redis解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
 | [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock)                       | [基于redis实现扣减库存的具体实现](https://www.jianshu.com/p/76bc0e963172) |
-| [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe)               | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q) |
+| [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe)               | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q)<br>[你还不了解Redis的发布/订阅功能与Redis的Stream吗](https://mp.weixin.qq.com/s/wjThHZT1edWmn31YZP9U7Q) |
 | [redis-websocket](https://github.com/xmxe/redis/tree/master/redis-websocket)               | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
 | [redis-searchfilter](https://github.com/xmxe/redis/tree/master/redis-searchfilter)         | [springboot java+redis实现简单实用的搜索栏热搜功能，不雅文字过滤功能。](https://mp.weixin.qq.com/s/MN172c64M7MWN57kTXHIgg) |
 | [redis-star](https://github.com/xmxe/redis/tree/master/redis-star)                         | [基于redis的点赞功能的实现](https://blog.csdn.net/qq_37618461/article/details/103821433) |
 | [redis-limitanno](https://github.com/xmxe/redis/tree/master/redis-limitanno)               | [Redis做接口限流，一个注解的事！](https://mp.weixin.qq.com/s/rzz2tgBBJpWz7gjmEfz2XQ) |
 | [redis-limitInterceptor](https://github.com/xmxe/redis/tree/master/redis-limitInterceptor) | [几行代码，搞定SpringBoot接口恶意刷新和暴力请求！](https://mp.weixin.qq.com/s/yKjRTWTt_5NAFLefrf-Ntw) |
-| [redis-accesslimit](https://github.com/xmxe/redis/tree/master/redis-accesslimit)                     | [Spring Boot + Redis实现API接口防刷限流](https://mp.weixin.qq.com/s/CEddKCkkNeYNTkNoClwuyQ) |
+| [redis-accesslimit](https://github.com/xmxe/redis/tree/master/redis-accesslimit)           | [Spring Boot + Redis实现API接口防刷限流](https://mp.weixin.qq.com/s/CEddKCkkNeYNTkNoClwuyQ) |
+| [redis-friend](https://github.com/xmxe/redis/tree/master/redis-friend)                     | [Redis实现微博好友功能微服务（关注，取关，共同关注）](https://mp.weixin.qq.com/s/GQsC6uVDo5Hxr92Zkcf8Qw) |
 
 
 
@@ -36,7 +37,6 @@
 
 - [Redis学习笔记一 简介](https://blog.csdn.net/weixin_44626569/article/details/89970593)
 - [Redis学习笔记二 基础](https://blog.csdn.net/weixin_44626569/article/details/90043210)
-- [你还不了解Redis的发布/订阅功能与Redis的Stream吗](https://mp.weixin.qq.com/s/wjThHZT1edWmn31YZP9U7Q)
 - [妈妈再也不担心我面试被Redis问得脸都绿了](https://mp.weixin.qq.com/s/A8qQiLwE10j-eC_K8ylvzw)
 - [Redis面试知识点总结！](https://mp.weixin.qq.com/s/KCBk_XYarpoEgW_QpBkLYg)
 - [这40道Redis面试题让你不再慌（附答案）](https://mp.weixin.qq.com/s/hGJJz5yCtfRkfccG9nYNjw)
@@ -44,11 +44,8 @@
 - [Redis最佳实践：7个维度+43条使用规范，带你彻底玩转Redis](https://mp.weixin.qq.com/s/5m8RwxxxRS2QPyRn4uSaCQ)
 - [使用Redis，你必须知道的21个注意要点](https://mp.weixin.qq.com/s/BaZWxYfIR7HsRB3A_sVkHA)
 - [从应用到底层36张图带你进入Redis世界](https://mp.weixin.qq.com/s/WqdOIqz46A5Af72J_Jkk8g)
-- [Redis规范你应该了解一下](https://mp.weixin.qq.com/s/jxLS1QZGio55Mk078VTL0g)
 - [看完后，我才明白Redis为什么默认16个数据库](https://mp.weixin.qq.com/s/Z5eBUHe62K6t_APgc6PTYQ)
-- [手写Redis服务端，从设计者的角度聊一聊Redis本身](https://mp.weixin.qq.com/s/5lNDbc9h1u2jlGfRwaVW6A)
 - [一口气说出Redis16个常见使用场景!](https://mp.weixin.qq.com/s/rhAEA2FHERXdyVeFbhQuSQ)
-- [面试官：大量请求Redis不存在的数据，从而打倒数据库，你有什么方案？](https://mp.weixin.qq.com/s/soF3F8YYSbynK2lyofGMAg)
 - [Redis是如何保证高效查询的？](https://mp.weixin.qq.com/s/xEYKp5ORPOFDXip6rmjqnQ)
 - [Redis为什么变慢了？一文讲透如何排查Redis性能问题|万字长文](https://mp.weixin.qq.com/s/s0hgRS2bmnYszA9OJxz56Q)
 - [Redis突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
@@ -79,10 +76,8 @@
 我们在set key的时候，可以给它设置一个过期时间，比如expire key 60。指定这key60s后过期，60s后，redis是如何处理的？我们先来介绍几种过期策略：一般有定时过期、惰性过期、定期过期三种。
 定时过期
 每个设置过期时间的key都需要创建一个定时器，到过期时间就会立即对key进行清除。该策略可以立即清除过期的数据，对内存很友好；但是会占用大量的CPU资源去处理过期的数据，从而影响缓存的响应时间和吞吐量。
-
 惰性过期
 只有当访问一个key时，才会判断该key是否已过期，过期则清除。该策略可以最大化地节省CPU资源，却对内存非常不友好。极端情况可能出现大量的过期key没有再次被访问，从而不会被清除，占用大量内存。
-
 定期过期
 每隔一定的时间，会扫描一定数量的数据库的expires字典中一定数量的key，并清除其中已过期的key。该策略是前两者的一个折中方案。通过调整定时扫描的时间间隔和每次扫描的限定耗时，可以在不同情况下使得CPU和内存资源达到最优的平衡效果。expires字典会保存所有设置了过期时间的key的过期时间数据，其中，key是指向键空间中的某个键的指针，value是该键的毫秒精度的UNIX时间戳表示的过期时间。键空间是指该Redis集群中保存的所有键。
 
@@ -223,7 +218,6 @@ Cluster集群
 - [永远不要使用Redis过期监听实现定时任务](https://mp.weixin.qq.com/s/4bgQrYm4i7KdSLFKGvsOIA)
 - [如何用Redis统计独立用户访问量？](https://mp.weixin.qq.com/s/oQXYKjKb0XqAJnO-m5uqOw)
 - [面试官：Redis如何实现每周热评功能？说说思路！](https://mp.weixin.qq.com/s/Guq3NXRw-Bk60hElYiO0_w)
-- [Redis实现微博好友功能微服务（关注，取关，共同关注）](https://mp.weixin.qq.com/s/GQsC6uVDo5Hxr92Zkcf8Qw)
 
 
 #### 命令
@@ -406,3 +400,5 @@ public void delBigZset(String host, int port, String password, String bigZsetKey
     jedis.del(bigZsetKey);
 }
 ```
+
+[Redis规范你应该了解一下](https://mp.weixin.qq.com/s/jxLS1QZGio55Mk078VTL0g)

@@ -7,20 +7,12 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>redis-resubmit</name>
+	<description>SpringBoot + Redis解决海量重复提交问题</description>
 
 	<parent>
 		<groupId>com.xmxe</groupId>
 		<artifactId>redis</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
