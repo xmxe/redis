@@ -1,19 +1,19 @@
 #### 介绍
 
-| name                                                                                       | description                                                  |
-|--------------------------------------------------------------------------------------------| ------------------------------------------------------------ |
-| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue)             | [base-redis-delay](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
-| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock)   | [Spring Boot + Redis实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig)<br>[Spring Boot加一个注解，轻松实现Redis分布式锁](https://mp.weixin.qq.com/s/qrIsjtvD4DNIHObKG1Jckg)<br>[SpringBoot整合Redis实现分布式缓存、分布式锁](https://mp.weixin.qq.com/s/jDDkDP4UOkzP95PLAqGPZg) |
-| [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit)                 | [SpringBoot + Redis解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
-| [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock)                       | [基于redis实现扣减库存的具体实现](https://www.jianshu.com/p/76bc0e963172) |
-| [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe)               | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q)<br>[你还不了解Redis的发布/订阅功能与Redis的Stream吗](https://mp.weixin.qq.com/s/wjThHZT1edWmn31YZP9U7Q) |
-| [redis-websocket](https://github.com/xmxe/redis/tree/master/redis-websocket)               | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
-| [redis-searchfilter](https://github.com/xmxe/redis/tree/master/redis-searchfilter)         | [springboot java+redis实现简单实用的搜索栏热搜功能，不雅文字过滤功能。](https://mp.weixin.qq.com/s/MN172c64M7MWN57kTXHIgg) |
-| [redis-star](https://github.com/xmxe/redis/tree/master/redis-star)                         | [基于redis的点赞功能的实现](https://blog.csdn.net/qq_37618461/article/details/103821433) |
-| [redis-limitanno](https://github.com/xmxe/redis/tree/master/redis-limitanno)               | [Redis做接口限流，一个注解的事！](https://mp.weixin.qq.com/s/rzz2tgBBJpWz7gjmEfz2XQ) |
+| name                                                         | description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [redis-delayqueue](https://github.com/xmxe/redis/tree/master/redis-delayqueue) | [base-redis-delay](https://gitee.com/daifyutils/springboot-samples/blob/master/base-redis-delay) <br>[Spring Boot + Redis实现延时队列](https://mp.weixin.qq.com/s/7hUHW7rwnJY7XCM0JFDXpQ) |
+| [redis-distributedlock](https://github.com/xmxe/redis/tree/master/redis-distributedlock) | [Spring Boot + Redis实现分布式锁](https://mp.weixin.qq.com/s/PR1wJfjKOMsd8YI4Akf2ig)<br>[Spring Boot加一个注解，轻松实现Redis分布式锁](https://mp.weixin.qq.com/s/qrIsjtvD4DNIHObKG1Jckg)<br>[SpringBoot整合Redis实现分布式缓存、分布式锁](https://mp.weixin.qq.com/s/jDDkDP4UOkzP95PLAqGPZg) |
+| [redis-resubmit](https://github.com/xmxe/redis/tree/master/redis-resubmit) | [SpringBoot + Redis解决海量重复提交问题](https://mp.weixin.qq.com/s/Ghd4Sk6vuufRiURoFS_lCA) |
+| [redis-stock](https://github.com/xmxe/redis/tree/master/redis-stock) | [基于redis实现扣减库存的具体实现](https://www.jianshu.com/p/76bc0e963172) |
+| [redis-subscribe](https://github.com/xmxe/redis/tree/master/redis-subscribe) | [Spring Boot中使用Redis的发布订阅功能](https://mp.weixin.qq.com/s/cRW1EXVzoz3aP-0rZH6Z9Q)<br>[你还不了解Redis的发布/订阅功能与Redis的Stream吗](https://mp.weixin.qq.com/s/wjThHZT1edWmn31YZP9U7Q) |
+| [redis-websocket](https://github.com/xmxe/redis/tree/master/redis-websocket) | [Redis解决websocket在分布式场景下session共享问题](https://mp.weixin.qq.com/s/kzf7hCmih3ix2yotjQCx5Q) |
+| [redis-searchfilter](https://github.com/xmxe/redis/tree/master/redis-searchfilter) | [springboot java+redis实现简单实用的搜索栏热搜功能，不雅文字过滤功能。](https://mp.weixin.qq.com/s/MN172c64M7MWN57kTXHIgg) |
+| [redis-star](https://github.com/xmxe/redis/tree/master/redis-star) | [基于redis的点赞功能的实现](https://blog.csdn.net/qq_37618461/article/details/103821433)<br>[Spring Boot + Redis实现点赞功能的缓存和定时持久化](https://mp.weixin.qq.com/s/r-I3j2sA2y2ZiljdiV7guA) |
+| [redis-limitanno](https://github.com/xmxe/redis/tree/master/redis-limitanno) | [Redis做接口限流，一个注解的事！](https://mp.weixin.qq.com/s/rzz2tgBBJpWz7gjmEfz2XQ) |
 | [redis-limitInterceptor](https://github.com/xmxe/redis/tree/master/redis-limitInterceptor) | [几行代码，搞定SpringBoot接口恶意刷新和暴力请求！](https://mp.weixin.qq.com/s/yKjRTWTt_5NAFLefrf-Ntw) |
-| [redis-accesslimit](https://github.com/xmxe/redis/tree/master/redis-accesslimit)           | [Spring Boot + Redis实现API接口防刷限流](https://mp.weixin.qq.com/s/CEddKCkkNeYNTkNoClwuyQ) |
-| [redis-friend](https://github.com/xmxe/redis/tree/master/redis-friend)                     | [Redis实现微博好友功能微服务（关注，取关，共同关注）](https://mp.weixin.qq.com/s/GQsC6uVDo5Hxr92Zkcf8Qw) |
+| [redis-accesslimit](https://github.com/xmxe/redis/tree/master/redis-accesslimit) | [Spring Boot + Redis实现API接口防刷限流](https://mp.weixin.qq.com/s/CEddKCkkNeYNTkNoClwuyQ) |
+| [redis-friend](https://github.com/xmxe/redis/tree/master/redis-friend) | [Redis实现微博好友功能微服务（关注，取关，共同关注）](https://mp.weixin.qq.com/s/GQsC6uVDo5Hxr92Zkcf8Qw) |
 
 
 
@@ -187,7 +187,7 @@ Cluster集群
 - [如何从0到1构建一个稳定、高性能的Redis集群？](https://mp.weixin.qq.com/s/ZXz2IzbQjQJzCq_hkpkuEg)
 - [4种Redis集群方案介绍+优缺点对比](https://mp.weixin.qq.com/s/Po85M418zvos3pHev2q0Tg)
 - [详细剖析Redis三种集群策略](https://mp.weixin.qq.com/s/M1RymGVUqhQG0KnKupnDXQ)
-
+- [一文掌握，单机Redis、哨兵和Redis Cluster的搭建](https://mp.weixin.qq.com/s/m9K6acUUc41j44b8zPh28w)
 
 
 #### 分布式锁
