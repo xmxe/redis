@@ -5,8 +5,7 @@ import redis.clients.jedis.JedisPubSub;
 
 /**
  * 利用redis实现延时队列
- * 如 生成订单30分钟未支付，则自动取消
- * 生成订单60秒后,给用户发短信
+ * 如生成订单30分钟未支付，则自动取消,生成订单60秒后给用户发短信
  * demo2
  *
  * 首先在在redis.conf中，加入一条配置
@@ -43,10 +42,9 @@ public class RedisDelayQueue2{
 		}
 	}
 
-	/**
+	/*
 	 * ps:redis的pub/sub机制存在一个硬伤，官网内容如下
 	 * 原:Because Redis Pub/Sub is fire and forget currently there is no way to use this feature if your application demands reliable notification of events, that is, if your Pub/Sub client disconnects, and reconnects later, all the events delivered during the time the client was disconnected are lost.
-	 * 翻: Redis的发布/订阅目前是即发即弃(fire and forget)模式的，因此无法实现事件的可靠通知。也就是说，如果发布/订阅的客户端断链之后又重连，
-	 * 则在客户端断链期间的所有事件都丢失了。因此，方案二不是太推荐。当然，如果你对可靠性要求不高，可以使用。
+	 * 翻: Redis的发布/订阅目前是即发即弃(fire and forget)模式的，因此无法实现事件的可靠通知。也就是说，如果发布/订阅的客户端断链之后又重连，则在客户端断链期间的所有事件都丢失了。因此，方案二不是太推荐。当然，如果你对可靠性要求不高，可以使用。
 	 */
 }

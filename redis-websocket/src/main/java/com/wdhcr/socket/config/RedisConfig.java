@@ -13,7 +13,6 @@ import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 
 /**
  * redis配置
- *
  */
 @Configuration
 @EnableCaching
@@ -23,7 +22,7 @@ public class RedisConfig {
     RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory, MessageListenerAdapter listenerAdapter) {
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
-        // 可以添加多个 messageListener，配置不同的交换机
+        // 可以添加多个messageListener，配置不同的交换机
         container.addMessageListener(listenerAdapter, new PatternTopic(Constants.REDIS_CHANNEL));// 订阅最新消息频道
         return container;
     }

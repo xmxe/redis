@@ -24,7 +24,7 @@ public class UserInfoDTO implements Serializable {
     // token
     private String token;
 
-    // 性别。0未知 1男 2女
+    // 性别 0未知 1男 2女
     private Integer sex = SexEnum.UNKNOW.getCode();
 
     // 电话
@@ -36,19 +36,19 @@ public class UserInfoDTO implements Serializable {
     // 头像
     private String avatar;
 
-    // 微信的 openid
+    // 微信的openid
     private String openid;
 
-    // qq的 id
+    // qq的id
     private String qqId;
 
-    // 用户角色。0未知
+    // 用户角色 0未知
     private Integer role = RoleEnum.UNKNOW.getCode();
 
     // 城市
     private String city;
 
-    // 工作经验。0:在校生 1:0年 2:1-2年 3:3-5年 4:5-10年 5:10年+
+    // 工作经验 0:在校生 1:0年 2:1-2年 3:3-5年 4:5-10年 5:10年+
     private Integer experience = ExperienceEnum.STUDENT.getCode();
 
     // 技能

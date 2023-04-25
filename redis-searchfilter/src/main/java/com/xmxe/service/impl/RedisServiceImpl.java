@@ -18,7 +18,7 @@ import java.util.Set;
 @Service("redisService")
 public class RedisServiceImpl implements RedisService {
 
-	//导入数据源
+	// 导入数据源
 	@Autowired
 	private StringRedisTemplate redisSearchTemplate;
 
@@ -102,7 +102,7 @@ public class RedisServiceImpl implements RedisService {
 	}
 
 	/**
-	 * 根据searchkey搜索其相关最热的前十名 (如果searchkey为null空，则返回redis存储的前十最热词条)
+	 * 根据searchkey搜索其相关最热的前十名(如果searchkey为null空，则返回redis存储的前十最热词条)
 	 */
 	@Override
 	public List<String> getHotList(String searchkey) {
@@ -112,30 +112,30 @@ public class RedisServiceImpl implements RedisService {
 		ZSetOperations zSetOperations = redisSearchTemplate.opsForZSet();
 		ValueOperations<String, String> valueOperations = redisSearchTemplate.opsForValue();
 		Set<String> value = zSetOperations.reverseRangeByScore("title", 0, Double.MAX_VALUE);
-		//key不为空的时候 推荐相关的最热前十名
+		// key不为空的时候推荐相关的最热前十名
 		if(StringUtils.isNotEmpty(searchkey)){
 			for (String val : value) {
 				if (StringUtils.containsIgnoreCase(val, key)) {
-					if (result.size() > 9) {//只返回最热的前十名
+					if (result.size() > 9) {// 只返回最热的前十名
 						break;
 					}
 					Long time = Long.valueOf(valueOperations.get(val));
-					if ((now - time) < 2592000000L) {//返回最近一个月的数据
+					if ((now - time) < 2592000000L) {// 返回最近一个月的数据
 						result.add(val);
-					} else {//时间超过一个月没搜索就把这个词热度归0
+					} else {// 时间超过一个月没搜索就把这个词热度归0
 						zSetOperations.add("title", val, 0);
 					}
 				}
 			}
 		}else{
 			for (String val : value) {
-				if (result.size() > 9) {//只返回最热的前十名
+				if (result.size() > 9) {// 只返回最热的前十名
 					break;
 				}
 				Long time = Long.valueOf(valueOperations.get(val));
-				if ((now - time) < 2592000000L) {//返回最近一个月的数据
+				if ((now - time) < 2592000000L) {// 返回最近一个月的数据
 					result.add(val);
-				} else {//时间超过一个月没搜索就把这个词热度归0
+				} else {// 时间超过一个月没搜索就把这个词热度归0
 					zSetOperations.add("title", val, 0);
 				}
 			}

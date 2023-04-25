@@ -30,7 +30,7 @@ public class FollowService {
 	/**
 	 * 关注/取关
 	 *
-	 * @param followUserId 关注的食客ID
+	 * @param followUserId  关注的食客ID
 	 * @param isFollowed    是否关注 1=关注 0=取关
 	 * @param accessToken   登录用户token
 	 * @param path          访问地址
@@ -50,7 +50,7 @@ public class FollowService {
 		if (follow == null && isFollowed == 1) {
 			// 添加关注信息
 			int count = followMapper.save((int)dinerInfo.get("id"), followUserId);
-			// 添加关注列表到 Redis
+			// 添加关注列表到Redis
 			if (count == 1) {
 				addToRedisSet((int)dinerInfo.get("id"), followUserId);
 			}
@@ -59,11 +59,11 @@ public class FollowService {
 			// return ResultInfoUtil.build(ApiConstant.SUCCESS_CODE,"关注成功", path, "关注成功");
 		}
 
-		// 如果有关注信息，且目前处于关注状态，且要进行取关操作 -- 取关关注
+		// 如果有关注信息，且目前处于关注状态，且要进行取关操作 --取关关注
 		if (follow != null && follow.getIs_valid() == 1 && isFollowed == 0) {
 			// 取关
 			int count = followMapper.update(follow.getId(), isFollowed);
-			// 移除 Redis 关注列表
+			// 移除Redis关注列表
 			if (count == 1) {
 				removeFromRedisSet((int)dinerInfo.get("id"), followUserId);
 			}
@@ -76,7 +76,7 @@ public class FollowService {
 		if (follow != null && follow.getIs_valid() == 0 && isFollowed == 1) {
 			// 重新关注
 			int count = followMapper.update(follow.getId(), isFollowed);
-			// 添加关注列表到 Redis
+			// 添加关注列表到Redis
 			if (count == 1) {
 				addToRedisSet((int)dinerInfo.get("id"), followUserId);
 			}
@@ -146,7 +146,7 @@ public class FollowService {
 			// return ResultInfoUtil.buildSuccess(path, new ArrayList<ShortUserInfo>());
 
 		}
-		// // 调用食客服务根据 ids 查询食客信息
+		// // 调用食客服务根据ids查询食客信息
 		// Map<String,Object> resultInfo = restTemplate.getForObject(usersServerName + "findByIds?access_token={accessToken}&ids={ids}",
 		// 		ResultInfo.class, accessToken, StrUtil.join(",", userIds));
 		// if (resultInfo.getCode() != ApiConstant.SUCCESS_CODE) {

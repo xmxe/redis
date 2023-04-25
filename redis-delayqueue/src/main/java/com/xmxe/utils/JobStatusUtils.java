@@ -31,7 +31,6 @@ public class JobStatusUtils {
         }
     }
 
-
     private static JobStatus timePass(JobStatus status) {
         if (JobStatus.DELAY == status) {
             return JobStatus.READY;

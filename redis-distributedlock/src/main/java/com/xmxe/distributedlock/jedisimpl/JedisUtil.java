@@ -95,7 +95,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 和offset 从指定的位置开始将原先value替换
+	 * 通过key和offset从指定的位置开始将原先value替换
 	 */
 	public Long setrange(String key, int offset, String str) {
 		Jedis jedis = getJedis();
@@ -135,7 +135,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过下标 和key 获取指定下标位置的 value
+	 * 通过下标和key获取指定下标位置的value
 	 */
 	public String getrange(String key, int startOffset, int endOffset) {
 		Jedis jedis = getJedis();
@@ -143,7 +143,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 对value进行加值+1操作,当value不是int类型时会返回错误,当key不存在是则value为1
+	 * 通过key对value进行加值+1操作,当value不是int类型时会返回错误,当key不存在是则value为1
 	 */
 	public Long incr(String key) {
 		Jedis jedis = getJedis();
@@ -207,7 +207,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 和 field 获取指定的 value
+	 * 通过key和field获取指定的value
 	 */
 	public String hget(String key, String failed) {
 		Jedis jedis = getJedis();
@@ -223,7 +223,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 和 fields 获取指定的value 如果没有对应的value则返回null
+	 * 通过key和fields获取指定的value,如果没有对应的value则返回null
 	 */
 	public List<String> hmget(String key, String... fields) {
 		Jedis jedis = getJedis();
@@ -255,7 +255,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 删除指定的 field
+	 * 通过key删除指定的field
 	 */
 	public Long hdel(String key, String... fields) {
 		Jedis jedis = getJedis();
@@ -289,7 +289,7 @@ public class JedisUtil {
 	/**
 	 * 通过key向list头部添加字符串
 	 * @param key key
-	 * @param strs 可以是一个string 也可以是string数组
+	 * @param strs 可以是一个string也可以是string数组
 	 * @return 返回list的value个数
 	 */
 	public Long lpush(String key, String... strs) {
@@ -300,7 +300,7 @@ public class JedisUtil {
 	/**
 	 * 通过key向list尾部添加字符串
 	 * @param key key
-	 * @param strs 可以是一个string 也可以是string数组
+	 * @param strs 可以是一个string也可以是string数组
 	 * @return 返回list的value个数
 	 */
 	public Long rpush(String key, String... strs) {
@@ -309,7 +309,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key在list指定的位置之前或者之后 添加字符串元素
+	 * 通过key在list指定的位置之前或者之后添加字符串元素
 	 *
 	 * @param key key
 	 * @param where LIST_POSITION枚举类型
@@ -335,7 +335,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key从对应的list中删除指定的count个 和 value相同的元素
+	 * 通过key从对应的list中删除指定的count个和value相同的元素
 	 *
 	 * @param key key
 	 * @param count 当count为0时删除全部
@@ -400,7 +400,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key获取list指定下标位置的value 如果start 为 0 end 为 -1 则返回全部的list中的value
+	 * 通过key获取list指定下标位置的value 如果start为0end为-1则返回全部的list中的value
 	 */
 	public List<String> lrange(String key, long start, long end) {
 		Jedis jedis = getJedis();
@@ -442,7 +442,7 @@ public class JedisUtil {
 	/**
 	 * 通过key获取set中的差集 以第一个set为标准
 	 *
-	 * @param keys 可以 是一个string 则返回set中所有的value 也可以是string数组
+	 * @param keys 可以是一个string则返回set中所有的value也可以是string数组
 	 */
 	public Set<String> sdiff(String... keys) {
 		Jedis jedis = getJedis();
@@ -453,7 +453,7 @@ public class JedisUtil {
 	 * 通过key获取set中的差集并存入到另一个key中 以第一个set为标准
 	 *
 	 * @param dstkey 差集存入的key
-	 * @param keys   可以 是一个string 则返回set中所有的value 也可以是string数组
+	 * @param keys   可以是一个string则返回set中所有的value也可以是string数组
 	 */
 	public Long sdiffstore(String dstkey, String... keys) {
 		Jedis jedis = getJedis();
@@ -463,7 +463,7 @@ public class JedisUtil {
 	/**
 	 * 通过key获取指定set中的交集
 	 *
-	 * @param keys 可以 是一个string 也可以是一个string数组
+	 * @param keys 可以是一个string也可以是一个string数组
 	 */
 	public Set<String> sinter(String... keys) {
 		Jedis jedis = getJedis();
@@ -471,10 +471,10 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key获取指定set中的交集 并将结果存入新的set中
+	 * 通过key获取指定set中的交集并将结果存入新的set中
 	 *
 	 * @param dstkey
-	 * @param keys   可以 是一个string 也可以是一个string数组
+	 * @param keys   可以是一个string也可以是一个string数组
 	 */
 	public Long sinterstore(String dstkey, String... keys) {
 		Jedis jedis = getJedis();
@@ -484,7 +484,7 @@ public class JedisUtil {
 	/**
 	 * 通过key返回所有set的并集
 	 *
-	 * @param keys 可以 是一个string 也可以是一个string数组
+	 * @param keys 可以是一个string也可以是一个string数组
 	 */
 	public Set<String> sunion(String... keys) {
 		Jedis jedis = getJedis();
@@ -495,7 +495,7 @@ public class JedisUtil {
 	 * 通过key返回所有set的并集,并存入到新的set中
 	 *
 	 * @param dstkey
-	 * @param keys   可以 是一个string 也可以是一个string数组
+	 * @param keys   可以是一个string也可以是一个string数组
 	 */
 	public Long sunionstore(String dstkey, String... keys) {
 		Jedis jedis = getJedis();
@@ -558,7 +558,7 @@ public class JedisUtil {
 	 * 通过key删除在zset中指定的value
 	 *
 	 * @param key key
-	 * @param members 可以 是一个string 也可以是一个string数组
+	 * @param members 可以是一个string也可以是一个string数组
 	 */
 	public Long zrem(String key, String... members) {
 		Jedis jedis = getJedis();
@@ -591,7 +591,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key将获取score从start到end中zset的value socre从大到小排序 当start为0 end为-1时返回全部
+	 * 通过key将获取score从start到end中zset的value socre从大到小排序 当start为0end为-1时返回全部
 	 */
 	public Set<String> zrevrange(String key, long start, long end) {
 		Jedis jedis = getJedis();
@@ -655,7 +655,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 返回满足pattern表达式的所有key keys(*) 返回所有的key
+	 * 返回满足pattern表达式的所有key keys(*)返回所有的key
 	 */
 	public Set<String> keys(String pattern) {
 		Jedis jedis = getJedis();

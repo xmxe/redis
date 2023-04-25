@@ -23,7 +23,7 @@ public class AccessLimitInterceptor implements HandlerInterceptor {
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-		try {// Handler 是否为 HandlerMethod 实例
+		try {// Handler是否为HandlerMethod实例
 			if (handler instanceof HandlerMethod) {
 				// 强转
 				HandlerMethod handlerMethod = (HandlerMethod) handler;

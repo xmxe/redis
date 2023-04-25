@@ -2,12 +2,15 @@ package com.xmxe.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
-import java.io.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
 
 /**
  * 屏蔽敏感词初始化
@@ -22,24 +25,24 @@ public class SensitiveWordInit {
 	 * 初始化敏感字库
 	 */
 	public Map initKeyWord() throws IOException {
-		// 读取敏感词库 ,存入Set中
+		// 读取敏感词库,存入Set中
 		Set<String> wordSet = readSensitiveWordFile();
 		// 将敏感词库加入到HashMap中//确定有穷自动机DFA
 		return addSensitiveWordToHashMap(wordSet);
 	}
 
 	/**
-	 * 读取敏感词库 ,存入HashMap中
+	 * 读取敏感词库,存入HashMap中
 	 */
 	private Set<String> readSensitiveWordFile() throws IOException {
 		Set<String> wordSet = null;
 		ClassPathResource classPathResource = new ClassPathResource("static/censorword.txt");
 		InputStream inputStream = classPathResource.getInputStream();
-		//敏感词库
+		// 敏感词库
 		try {
 			// 读取文件输入流
 			InputStreamReader read = new InputStreamReader(inputStream, ENCODING);
-			// 文件是否是文件 和 是否存在
+			// 文件是否是文件和是否存在
 			wordSet = new HashSet<String>();
 			// StringBuffer sb = new StringBuffer();
 			// BufferedReader是包装类，先把字符读到缓存里，到缓存满了，再读入内存，提高了读的效率。

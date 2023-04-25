@@ -9,8 +9,7 @@ import java.util.Set;
 
 /**
  * 利用redis实现延时队列
- * 如 生成订单30分钟未支付，则自动取消
- * 生成订单60秒后,给用户发短信
+ * 如生成订单30分钟未支付，则自动取消,生成订单60秒后,给用户发短信
  * demo1
  */
 public class RedisDelayQueue {
@@ -27,7 +26,7 @@ public class RedisDelayQueue {
 	 */
 	public void productionDelayMessage(){
 		for(int i=0;i<5;i++){
-			//延迟3秒
+			// 延迟3秒
 			Calendar cal1 = Calendar.getInstance();
 			cal1.add(Calendar.SECOND, 3);
 			int second3later = (int) (cal1.getTimeInMillis() / 1000);

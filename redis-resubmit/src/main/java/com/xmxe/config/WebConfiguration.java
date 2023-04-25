@@ -17,7 +17,7 @@ public class WebConfiguration implements WebMvcConfigurer {
 	private AutoIdempotentInterceptor autoIdempotentInterceptor;
 
 	/**
-	 * 添加拦截器 * @param registry
+	 * 添加拦截器
 	 */
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {

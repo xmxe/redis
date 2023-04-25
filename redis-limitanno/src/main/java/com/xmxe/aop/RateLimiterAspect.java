@@ -66,9 +66,9 @@ public class RateLimiterAspect {
 	}
 }
 /**
- * 首先获取到注解中的 key、time 以及 count 三个参数。
- * 获取一个组合的 key，所谓的组合的 key，就是在注解的 key 属性基础上，再加上方法的完整路径，如果是 IP 模式的话，就再加上 IP 地址。以 IP 模式为例，最终生成的 key 类似这样：rate_limit:127.0.0.1-org.javaboy.ratelimiter.controller.HelloController-hello（如果不是 IP 模式，那么生成的 key 中就不包含 IP 地址）。
- * 将生成的 key 放到集合中。
- * 通过 redisTemplate.execute 方法取执行一个 Lua 脚本，第一个参数是脚本所封装的对象，第二个参数是 key，对应了脚本中的 KEYS，后面是可变长度的参数，对应了脚本中的 ARGV。
- * 将 Lua 脚本执行的结果与 count 进行比较，如果大于 count，就说明过载了，抛异常就行了。
+ * 首先获取到注解中的key、time以及count三个参数。
+ * 获取一个组合的key，所谓的组合的key，就是在注解的key属性基础上，再加上方法的完整路径，如果是IP模式的话，就再加上IP地址。以IP模式为例，最终生成的key类似这样：rate_limit:127.0.0.1-org.javaboy.ratelimiter.controller.HelloController-hello（如果不是IP模式，那么生成的key中就不包含IP地址）。
+ * 将生成的key放到集合中。
+ * 通过redisTemplate.execute方法取执行一个Lua脚本，第一个参数是脚本所封装的对象，第二个参数是key，对应了脚本中的KEYS，后面是可变长度的参数，对应了脚本中的ARGV。
+ * 将Lua脚本执行的结果与count进行比较，如果大于count，就说明过载了，抛异常就行了。
  */

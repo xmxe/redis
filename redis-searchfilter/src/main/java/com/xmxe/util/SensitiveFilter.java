@@ -10,10 +10,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * 敏感词过滤器：利用DFA算法  进行敏感词过滤
+ * 敏感词过滤器：利用DFA算法进行敏感词过滤
  */
 public class SensitiveFilter {
-	//敏感词过滤器：利用DFA算法  进行敏感词过滤
+	//敏感词过滤器:利用DFA算法进行敏感词过滤
 	private Map sensitiveWordMap = null;
 
 	// 最小匹配规则
@@ -90,8 +90,7 @@ public class SensitiveFilter {
 	}
 
 	/**
-	 * 检查文字中是否包含敏感字符，检查规则:
-	 * 如果存在，则返回敏感词字符的长度，不存在返回0
+	 * 检查文字中是否包含敏感字符，检查规则:如果存在，则返回敏感词字符的长度，不存在返回0
 	 */
 	public int CheckSensitiveWord(String txt, int beginIndex, int matchType) {
 		// 敏感词结束标识位：用于敏感词只有1位的情况

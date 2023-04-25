@@ -31,7 +31,7 @@ public class RedisReceiver implements MessageListener {
         String channel = new String(message.getChannel());
         String msg = "";
         try {
-            //注意与发布消息编码一致，否则会乱码
+            // 注意与发布消息编码一致，否则会乱码
             msg = new String(message.getBody(), Constants.UTF8);
             if (!StringUtils.isEmpty(msg)){
                 // 最新消息

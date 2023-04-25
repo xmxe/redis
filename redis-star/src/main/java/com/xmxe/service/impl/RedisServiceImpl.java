@@ -61,17 +61,17 @@ public class RedisServiceImpl implements RedisService {
         while (cursor.hasNext()){
             Map.Entry<Object, Object> entry = cursor.next();
             String key = (String) entry.getKey();
-            //分离出 likedUserId，likedPostId
+            //分离出likedUserId，likedPostId
             String[] split = key.split("::");
             String likedUserId = split[0];
             String likedPostId = split[1];
             Integer value = (Integer) entry.getValue();
 
-            //组装成 UserLike 对象
+            //组装成UserLike对象
             UserLike userLike = new UserLike(likedUserId, likedPostId, value);
             list.add(userLike);
 
-            //存到 list 后从 Redis 中删除
+            //存到list后从Redis中删除
             redisTemplate.opsForHash().delete(RedisKeyUtils.MAP_KEY_USER_LIKED, key);
         }
 
@@ -84,7 +84,7 @@ public class RedisServiceImpl implements RedisService {
         List<LikedCountDTO> list = new ArrayList<>();
         while (cursor.hasNext()){
             Map.Entry<Object, Object> map = cursor.next();
-            //将点赞数量存储在 LikedCountDT
+            //将点赞数量存储在LikedCountDT
             String key = (String)map.getKey();
             LikedCountDTO dto = new LikedCountDTO(key, (Integer) map.getValue());
             list.add(dto);

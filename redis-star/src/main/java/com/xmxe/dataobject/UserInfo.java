@@ -21,10 +21,10 @@ public class UserInfo {
     // 密码
     private String password;
 
-    // token. 改为存储到 Redis 中，不再在数据库中存
+    // token 改为存储到Redis中，不再在数据库中存
     // private String token;
 
-    // 性别。0未知 1男 2女
+    // 性别 0未知 1男 2女
     private Integer sex;
 
     // 电话

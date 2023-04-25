@@ -16,7 +16,7 @@ public class SearchController {
 	@GetMapping("search")
 	public String search(String searchkey) {
 
-		//非法敏感词汇判断
+		// 非法敏感词汇判断
 		SensitiveFilter filter = null;
 		try {
 			filter = SensitiveFilter.getInstance();

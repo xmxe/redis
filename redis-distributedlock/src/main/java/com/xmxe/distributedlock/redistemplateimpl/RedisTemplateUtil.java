@@ -49,7 +49,7 @@ public class RedisTemplateUtil {
 	 * 判断key是否存在
 	 *
 	 * @param key 键
-	 * @return true 存在 false不存在
+	 * @return true存在 false不存在
 	 */
 	public boolean hasKey(String key) {
 		try {
@@ -63,7 +63,7 @@ public class RedisTemplateUtil {
 	/**
 	 * 删除缓存
 	 *
-	 * @param key 可以传一个值 或多个
+	 * @param key 可以传一个值或多个
 	 */
 	@SuppressWarnings("unchecked")
 	public void del(String... key) {
@@ -110,8 +110,8 @@ public class RedisTemplateUtil {
 	 *
 	 * @param key 键
 	 * @param value 值
-	 * @param time 时间(秒) time要大于0 如果time小于等于0 将设置无限期
-	 * @return true成功 false 失败
+	 * @param time 时间(秒) time要大于0 如果time小于等于0将设置无限期
+	 * @return true成功 false失败
 	 */
 	public boolean set(String key, Object value, long time) {
 		try {
@@ -203,7 +203,7 @@ public class RedisTemplateUtil {
 	 *
 	 * @param key 键
 	 * @param map 对应多个键值
-	 * @return true 成功 false 失败
+	 * @return true成功 false失败
 	 */
 	public boolean hmset(String key, Map<String, Object> map) {
 		try {
@@ -216,7 +216,7 @@ public class RedisTemplateUtil {
 	}
 
 	/**
-	 * HashSet 并设置时间
+	 * HashSet并设置时间
 	 *
 	 * @param key 键
 	 * @param map 对应多个键值
@@ -242,7 +242,7 @@ public class RedisTemplateUtil {
 	 * @param key 键
 	 * @param item 项
 	 * @param value 值
-	 * @return true 成功 false失败
+	 * @return true成功 false失败
 	 */
 	public boolean hset(String key, String item, Object value) {
 		try {
@@ -261,7 +261,7 @@ public class RedisTemplateUtil {
 	 * @param item 项
 	 * @param value 值
 	 * @param time 时间(秒) 注意:如果已存在的hash表有时间,这里将会替换原有的时间
-	 * @return true 成功 false失败
+	 * @return true成功 false失败
 	 */
 	public boolean hset(String key, String item, Object value, long time) {
 		try {
@@ -291,14 +291,14 @@ public class RedisTemplateUtil {
 	 *
 	 * @param key 键 不能为null
 	 * @param item 项 不能为null
-	 * @return true 存在 false不存在
+	 * @return true存在 false不存在
 	 */
 	public boolean hHasKey(String key, String item) {
 		return redisTemplate.opsForHash().hasKey(key, item);
 	}
 
 	/**
-	 * hash递增 如果不存在,就会创建一个 并把新增后的值返回
+	 * hash递增 如果不存在,就会创建一个并把新增后的值返回
 	 *
 	 * @param key 键
 	 * @param item 项
@@ -342,7 +342,7 @@ public class RedisTemplateUtil {
 	 *
 	 * @param key 键
 	 * @param value 值
-	 * @return true 存在 false不存在
+	 * @return true存在 false不存在
 	 */
 	public boolean sHasKey(String key, Object value) {
 		try {
@@ -440,7 +440,7 @@ public class RedisTemplateUtil {
 	 *
 	 * @param key 键
 	 * @param start 开始
-	 * @param end 结束 0 到 -1代表所有值
+	 * @param end 结束 0到-1代表所有值
 	 * @return
 	 */
 	public List<Object> lGet(String key, long start, long end) {
@@ -471,7 +471,7 @@ public class RedisTemplateUtil {
 	 * 通过索引 获取list中的值
 	 *
 	 * @param key 键
-	 * @param index 索引 index>=0时， 0 表头，1 第二个元素，依次类推；index<0时，-1，表尾，-2倒数第二个元素，依次类推
+	 * @param index 索引 index>=0时,0表头,1第二个元素,依次类推；index<0时,-1表尾,-2倒数第二个元素,依次类推
 	 * @return
 	 */
 	public Object lGetIndex(String key, long index) {
@@ -592,7 +592,7 @@ public class RedisTemplateUtil {
 	}
 
 	/**
-	 * redis发布-订阅之 发布
+	 * redis发布-订阅之发布
 	 * @param channel 要发布的频道 (topic)
 	 * @param message 发布的消息 消息需要序列化处理
 	 */

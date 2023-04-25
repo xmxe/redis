@@ -30,7 +30,7 @@ public interface RedisService {
 	List<String> getHotList(String searchkey);
 
 	/**
-	 * 每次点击给相关词searchkey热度 +1
+	 * 每次点击给相关词searchkey热度+1
 	 */
 	int incrementScore(String searchkey);
 }

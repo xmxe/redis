@@ -9,7 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 /**
- * 待完成任务 内部使用topic进行细分 每个topic对应一个list集合
+ * 待完成任务,内部使用topic进行细分,每个topic对应一个list集合
  */
 @Component
 @Slf4j

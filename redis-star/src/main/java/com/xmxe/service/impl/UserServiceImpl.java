@@ -90,9 +90,9 @@ public class UserServiceImpl implements UserService {
             throw new UserException(ResultEnum.PASSWORD_ERROR);
         }
 
-        //生成 token 并保存在 Redis 中
+        //生成token并保存在Redis中
         String token = KeyUtils.genUniqueKey();
-        //将token存储在 Redis 中。键是 TOKEN_用户id, 值是token
+        //将token存储在Redis中。键是TOKEN_用户id, 值是token
         redisUtils.setString(String.format(RedisConsts.TOKEN_TEMPLATE, user.getId()), token, 2l, TimeUnit.HOURS);
 
         UserInfoDTO dto = new UserInfoDTO();
@@ -183,10 +183,10 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
-     * 根据传入的排序标记生成带排序的 Pageable 对象
+     * 根据传入的排序标记生成带排序的Pageable对象
      */
     private Pageable genSortedPageable(Integer page, Integer size, Integer sort) {
-        //sort 为空则返回原列表
+        //sort为空则返回原列表
         if (sort == null) {
             return PageRequest.of(page, size);
         }

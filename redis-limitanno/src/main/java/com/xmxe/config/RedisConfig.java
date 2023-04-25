@@ -16,7 +16,7 @@ import org.springframework.scripting.support.ResourceScriptSource;
 public class RedisConfig {
 
 	/**
-	 * 修改 RedisTemplate 序列化方案
+	 * 修改RedisTemplate序列化方案
 	 */
 	@Bean
 	public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory) {

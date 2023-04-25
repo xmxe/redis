@@ -27,10 +27,10 @@ public class JedisUtil {
 			// 在获取连接的时候检查有效性, 默认false
 			jedisPoolConfig.setTestOnBorrow(true);
 			if (password != null && !"".equals(password)) {
-				// redis 设置了密码
+				// redis设置了密码
 				pool = new JedisPool(jedisPoolConfig, ip, port, 10000, password);
 			} else {
-				// redis 未设置密码
+				// redis未设置密码
 				pool = new JedisPool(jedisPoolConfig, ip, port, 10000);
 			}
 		}
@@ -95,7 +95,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 和offset 从指定的位置开始将原先value替换
+	 * 通过key和offset从指定的位置开始将原先value替换
 	 */
 	public Long setrange(String key, int offset, String str) {
 		Jedis jedis = getJedis();
@@ -136,7 +136,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过下标 和key 获取指定下标位置的 value
+	 * 通过下标和key获取指定下标位置的value
 	 */
 	public String getrange(String key, int startOffset, int endOffset) {
 		Jedis jedis = getJedis();
@@ -144,7 +144,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 对value进行加值+1操作,当value不是int类型时会返回错误,当key不存在是则value为1
+	 * 通过key对value进行加值+1操作,当value不是int类型时会返回错误,当key不存在是则value为1
 	 */
 	public Long incr(String key) {
 		Jedis jedis = getJedis();
@@ -200,7 +200,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key同时设置 hash的多个field
+	 * 通过key同时设置hash的多个field
 	 */
 	public String hmset(String key, Map<String, String> hash) {
 		Jedis jedis = getJedis();
@@ -208,7 +208,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 和 field 获取指定的 value
+	 * 通过key和field获取指定的value
 	 */
 	public String hget(String key, String failed) {
 		Jedis jedis = getJedis();
@@ -224,7 +224,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 和 fields 获取指定的value 如果没有对应的value则返回null
+	 * 通过key和fields获取指定的value 如果没有对应的value则返回null
 	 */
 	public List<String> hmget(String key, String... fields) {
 		Jedis jedis = getJedis();
@@ -256,7 +256,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key 删除指定的 field
+	 * 通过key删除指定的field
 	 */
 	public Long hdel(String key, String... fields) {
 		Jedis jedis = getJedis();
@@ -338,7 +338,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key从对应的list中删除指定的count个 和 value相同的元素
+	 * 通过key从对应的list中删除指定的count个和value相同的元素
 	 *
 	 * @param key key
 	 * @param count 当count为0时删除全部
@@ -361,7 +361,6 @@ public class JedisUtil {
 
 	/**
 	 * 通过key从list的头部删除一个value,并返回该value
-	 *
 	 */
 	public synchronized String lpop(String key) {
 
@@ -371,7 +370,6 @@ public class JedisUtil {
 
 	/**
 	 * 通过key从list尾部删除一个value,并返回该元素
-	 *
 	 */
 	synchronized public String rpop(String key) {
 		Jedis jedis = getJedis();
@@ -406,7 +404,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key获取list指定下标位置的value 如果start 为 0 end 为 -1 则返回全部的list中的value
+	 * 通过key获取list指定下标位置的value 如果start为0end为-1则返回全部的list中的value
 	 *
 	 */
 	public List<String> lrange(String key, long start, long end) {
@@ -450,7 +448,7 @@ public class JedisUtil {
 	/**
 	 * 通过key获取set中的差集 以第一个set为标准
 	 *
-	 * @param keys 可以是一个string 则返回set中所有的value 也可以是string数组
+	 * @param keys 可以是一个string则返回set中所有的value 也可以是string数组
 	 */
 	public Set<String> sdiff(String... keys) {
 		Jedis jedis = getJedis();
@@ -567,7 +565,7 @@ public class JedisUtil {
 	 * 通过key删除在zset中指定的value
 	 *
 	 * @param key key
-	 * @param members 可以 是一个string 也可以是一个string数组
+	 * @param members 可以是一个string 也可以是一个string数组
 	 */
 	public Long zrem(String key, String... members) {
 		Jedis jedis = getJedis();
@@ -600,7 +598,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 通过key将获取score从start到end中zset的value socre从大到小排序 当start为0 end为-1时返回全部
+	 * 通过key将获取score从start到end中zset的value socre从大到小排序 当start为0end为-1时返回全部
 	 *
 	 */
 	public Set<String> zrevrange(String key, long start, long end) {
@@ -671,7 +669,7 @@ public class JedisUtil {
 	}
 
 	/**
-	 * 返回满足pattern表达式的所有key keys(*) 返回所有的key
+	 * 返回满足pattern表达式的所有key keys(*)返回所有的key
 	 *
 	 */
 	public Set<String> keys(String pattern) {

@@ -27,6 +27,7 @@
 		<module>redis-limitInterceptor</module>
 		<module>redis-accesslimit</module>
 		<module>redis-friend</module>
+		<module>redis-idempotent</module>
 	</modules>
 
 	<dependencies>

@@ -34,7 +34,7 @@ public class DelayJobHandler implements Runnable{
         while (true) {
             try {
                 DelayJob delayJob = delayBucket.getFirstDelayTime(index);
-                //没有任务
+                // 没有任务
                 if (delayJob == null) {
                     sleep();
                     continue;
@@ -47,7 +47,7 @@ public class DelayJobHandler implements Runnable{
                 }
                 Job job = jobPool.getJob(delayJob.getJodId());
 
-                //延迟任务元数据不存在
+                // 延迟任务元数据不存在
                 if (job == null) {
                     log.info("移除不存在任务:{}", JSON.toJSONString(delayJob));
                     delayBucket.removeDelayTime(index,delayJob);

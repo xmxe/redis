@@ -40,7 +40,7 @@ public interface UserService {
     UserInfo findById(String id);
 
     /**
-     * 重置/修改 密码
+     * 重置/修改密码
      */
     UserInfo resetPassword(String id, String oldPassword, String newPassword);
 

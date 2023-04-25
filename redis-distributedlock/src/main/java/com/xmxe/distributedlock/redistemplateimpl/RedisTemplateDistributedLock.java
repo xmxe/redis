@@ -14,16 +14,16 @@ import java.util.UUID;
 public class RedisTemplateDistributedLock {
     private static Logger log = LoggerFactory.getLogger(RedisTemplateDistributedLock.class);
 
-    // 鉴权信息 key 前缀
+    // 鉴权信息key前缀
     public static final String AUTH_REDIS_PREFIX = "UNIF_AUTH_";
 
-    // 缓存信息 key 前缀
+    // 缓存信息key前缀
     public static final String CACHE_REDIS_PREFIX = "UNIF_CACHE_";
 
     // 分布式锁信息key前缀
     public static final String LOCK_REDIS_PREFIX = "UNIF_LOCK_";
 
-    // 默认轮休获取锁间隔时间， 单位：毫秒
+    // 默认轮休获取锁间隔时间 单位：毫秒
     private static final int DEFAULT_ACQUIRE_RESOLUTION_MILLIS = 100;
 
     private static final String UNLOCK_LUA;
@@ -44,8 +44,8 @@ public class RedisTemplateDistributedLock {
      *
      * @param redisTemplate redis连接
      * @param key           redis key
-     * @param expire        锁过期时间, 单位 秒
-     * @return 当前锁唯一id，如果没有获取到，返回 null
+     * @param expire        锁过期时间, 单位秒
+     * @return 当前锁唯一id，如果没有获取到，返回null
      */
     public static String lock(RedisTemplate<?, ?> redisTemplate, final String key, long expire) {
         return lock(redisTemplate, key, expire, -1);
@@ -56,9 +56,9 @@ public class RedisTemplateDistributedLock {
      *
      * @param redisTemplate  redis连接
      * @param key            redis key
-     * @param expire         锁过期时间, 单位 秒
-     * @param acquireTimeout 获取锁超时时间, -1代表永不超时, 单位 秒
-     * @return 当前锁唯一id，如果没有获取到，返回 null
+     * @param expire         锁过期时间, 单位秒
+     * @param acquireTimeout 获取锁超时时间, -1代表永不超时, 单位秒
+     * @return 当前锁唯一id，如果没有获取到，返回null
      */
     public static String lock(RedisTemplate<?, ?> redisTemplate, final String key, long expire, long acquireTimeout) {
         try {
@@ -74,8 +74,8 @@ public class RedisTemplateDistributedLock {
      *
      * @param redisTemplate redis连接
      * @param key           redis key
-     * @param expire        锁过期时间, 单位 秒
-     * @return 当前锁唯一id，如果没有获取到，返回 null
+     * @param expire        锁过期时间, 单位秒
+     * @return 当前锁唯一id，如果没有获取到，返回null
      */
     public static String lockFailThrowException(RedisTemplate<?, ?> redisTemplate, final String key, long expire) {
         return lockFailThrowException(redisTemplate, key, expire, -1);
@@ -86,9 +86,9 @@ public class RedisTemplateDistributedLock {
      *
      * @param redisTemplate  redis连接
      * @param key            redis key
-     * @param expire         锁过期时间, 单位 秒
-     * @param acquireTimeout 获取锁超时时间, -1代表永不超时, 单位 秒
-     * @return 当前锁唯一id，如果没有获取到，返回 null
+     * @param expire         锁过期时间, 单位秒
+     * @param acquireTimeout 获取锁超时时间, -1代表永不超时, 单位秒
+     * @return 当前锁唯一id，如果没有获取到，返回null
      */
     public static String lockFailThrowException(RedisTemplate<?, ?> redisTemplate, final String key, long expire,
             long acquireTimeout) {
@@ -118,7 +118,6 @@ public class RedisTemplateDistributedLock {
                 }
                 // 调用tryLock
                 boolean hasLock = tryLock(redisTemplate, key, expire, lockId);
-
                 // 获取锁成功
                 if (hasLock) {
                     return lockId;

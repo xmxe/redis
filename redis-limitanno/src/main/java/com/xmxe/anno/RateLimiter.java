@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 public @interface RateLimiter {
 	/**
 	 * 限流key
-	 * 这个仅仅是一个前缀，将来完整的 key 是这个前缀再加上接口方法的完整路径，共同组成限流 key，这个 key 将被存入到 Redis 中。
+	 * 这个仅仅是一个前缀，将来完整的key是这个前缀再加上接口方法的完整路径，共同组成限流key，这个key将被存入到Redis中。
 	 */
 	String key() default "rate_limit:";
 

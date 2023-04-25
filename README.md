@@ -14,6 +14,7 @@
 | [redis-limitInterceptor](https://github.com/xmxe/redis/tree/master/redis-limitInterceptor) | [几行代码，搞定SpringBoot接口恶意刷新和暴力请求！](https://mp.weixin.qq.com/s/yKjRTWTt_5NAFLefrf-Ntw) |
 | [redis-accesslimit](https://github.com/xmxe/redis/tree/master/redis-accesslimit) | [Spring Boot + Redis实现API接口防刷限流](https://mp.weixin.qq.com/s/CEddKCkkNeYNTkNoClwuyQ) |
 | [redis-friend](https://github.com/xmxe/redis/tree/master/redis-friend) | [Redis实现微博好友功能微服务（关注，取关，共同关注）](https://mp.weixin.qq.com/s/GQsC6uVDo5Hxr92Zkcf8Qw) |
+| [redis-idempotent](https://github.com/xmxe/redis/tree/master/redis-idempotent) | [一种非侵入式幂等性的Java实现](https://mp.weixin.qq.com/s/eiUOIlNwoTXXsKBOFycB2g) |
 
 ## Redis命令
 

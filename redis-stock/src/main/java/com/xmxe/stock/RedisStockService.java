@@ -36,7 +36,7 @@ public class RedisStockService {
 	//  不限库存
 	public static final long UNINITIALIZED_STOCK = -3L;
 
-	// Redis 客户端
+	// Redis客户端
 	@Resource
 	private RedisTemplate<String, Object> redisTemplate;
 
@@ -44,7 +44,7 @@ public class RedisStockService {
 	public static final String STOCK_LUA;
 
 	static {
-		/**
+		/*
 		 *
 		 * 扣减库存Lua脚本
 		 * 库存（stock）-1：表示不限库存

@@ -18,7 +18,7 @@ import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 延时处理队列 使用可排序的ZSet保存数据，提供取出最小值等操作
+ * 延时处理队列,使用可排序的ZSet保存数据,提供取出最小值等操作
  **/
 @Slf4j
 @Component

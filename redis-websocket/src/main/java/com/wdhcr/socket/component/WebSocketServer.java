@@ -31,7 +31,7 @@ public class WebSocketServer {
     // 当前在线连接数
     private static AtomicInteger onlineCount = new AtomicInteger(0);
 
-    // 用来存放每个客户端对应的 WebSocketServer 对象
+    // 用来存放每个客户端对应的WebSocketServer对象
     private static ConcurrentHashMap<Long, WebSocketServer> webSocketMap = new ConcurrentHashMap<>();
 
     // 与某个客户端的连接会话，需要通过它来给客户端发送数据
@@ -101,7 +101,7 @@ public class WebSocketServer {
 
 
     /**
-     * 分布式使用redis 去发布消息
+     * 分布式使用redis去发布消息
      */
     public void sendMessage(String key,String message) {
         String newMessge= null;
@@ -115,11 +115,11 @@ public class WebSocketServer {
         map.put(Constants.REDIS_MESSAGE_VALUE, newMessge);
 
         /*
-         * spring管理的都是单例（singleton）和 websocket （多对象）相冲突。
-         * 需要了解一个事实：websocket 是多对象的，每个用户的聊天客户端对应 java 后台的一个 websocket 对象，前后台一对一（多对多）实时连接，
-         * 所以 websocket 不可能像 servlet 一样做成单例的，让所有聊天用户连接到一个 websocket对象，这样无法保存所有用户的实时连接信息。
-         * 可能 spring 开发者考虑到这个问题，没有让 spring 创建管理 websocket ，而是由 java 原来的机制管理websocket ，所以用户聊天时创建的
-         * websocket 连接对象不是 spring 创建的，spring 也不会为不是他创建的对象进行依赖注入，所以如果不用static关键字，每个 websocket 对象的 service 都是 null。
+         * spring管理的都是单例（singleton）和websocket（多对象）相冲突。
+         * 需要了解一个事实：websocket是多对象的，每个用户的聊天客户端对应java后台的一个websocket对象，前后台一对一（多对多）实时连接，
+         * 所以websocket不可能像servlet一样做成单例的，让所有聊天用户连接到一个websocket对象，这样无法保存所有用户的实时连接信息。
+         * 可能spring开发者考虑到这个问题，没有让spring创建管理websocket，而是由java原来的机制管理websocket，所以用户聊天时创建的
+         * websocket连接对象不是spring创建的，spring也不会为不是他创建的对象进行依赖注入，所以如果不用static关键字，每个websocket对象的service都是null。
          */
 
         StringRedisTemplate template = SpringUtils.getBean(StringRedisTemplate.class);

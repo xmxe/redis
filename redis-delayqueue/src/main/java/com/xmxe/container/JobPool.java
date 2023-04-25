@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 
 /**
- * JobPool任务池 为普通的K/V结构，提供基础的操作
+ * JobPool任务池为普通的K/V结构，提供基础的操作
  **/
 @Component
 @Slf4j

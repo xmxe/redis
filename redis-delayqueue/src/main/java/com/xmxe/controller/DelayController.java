@@ -26,10 +26,10 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 对象
  * 我们现在可以了解到中间存在的几个组件
  * 延迟队列，为Redis延迟队列。实现消息传递
- * Job pool 任务池保存job元信息。根据文章描述使用K/V的数据结构，key为ID，value为job
- * Delay Bucket 用来保存业务的延迟任务。文章中描述使用轮询方式放入某一个Bucket可以知道其并没有使用topic来区分，个人这里默认使用顺序插入
- * Timer 时间组件，负责扫描各个Bucket。根据文章描述存在多个Timer，但是同一个Timer同一时间只能扫描一个Bucket
- * Ready Queue 负责存放需要被完成的任务，但是根据描述根据Topic的不同存在多个Ready Queue。
+ * Job pool任务池保存job元信息。根据文章描述使用K/V的数据结构，key为ID，value为job
+ * Delay Bucket用来保存业务的延迟任务。文章中描述使用轮询方式放入某一个Bucket可以知道其并没有使用topic来区分，个人这里默认使用顺序插入
+ * Timer时间组件，负责扫描各个Bucket。根据文章描述存在多个Timer，但是同一个Timer同一时间只能扫描一个Bucket
+ * Ready Queue负责存放需要被完成的任务，但是根据描述根据Topic的不同存在多个Ready Queue。
  * 其中Timer负责轮询，Job pool、Delay Bucket、Ready Queue都是不同职责的集合。
  *
  * 任务状态

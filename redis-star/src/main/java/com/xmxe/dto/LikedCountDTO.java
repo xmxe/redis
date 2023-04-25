@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * 点赞数量 DTO。用于存储从 Redis 取出来的被点赞数量
+ * 点赞数量DTO。用于存储从Redis取出来的被点赞数量
  */
 @Data
 public class LikedCountDTO implements Serializable {

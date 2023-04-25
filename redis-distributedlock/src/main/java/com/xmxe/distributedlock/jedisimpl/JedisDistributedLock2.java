@@ -30,7 +30,7 @@ public class JedisDistributedLock2 {
 		try {
 			// 获取锁的超时时间，超过这个时间则放弃获取锁
 			long end = System.currentTimeMillis() + acquireTimeout;
-			// 随机生成一个 value
+			// 随机生成一个value
 			String requireToken = UUID.randomUUID().toString();
 			while (System.currentTimeMillis() < end) {
 				SetParams setParams = SetParams.setParams().nx().px(expireTime);
