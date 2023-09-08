@@ -87,7 +87,7 @@
 - [面试官问：Redis分布式锁如何自动续期？](https://mp.weixin.qq.com/s/x9YFF4QtHrCu3abSQHEL-A)
 - [新来个技术总监，这Redis分布式锁设计的真漂亮！](https://mp.weixin.qq.com/s/NyGzKF2hZnS-6UnPxbFXcg)
 - [lock4j:基于SpringAOP的声明式和编程式分布式锁，支持RedisTemplate、Redisson、Zookeeper](https://gitee.com/baomidou/lock4j)
-
+- [分布式锁工具Redisson，太香了！](https://mp.weixin.qq.com/s/m72alKVdpwwSKmIlaaroKQ)
 
 ## 业务结合
 

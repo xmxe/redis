@@ -53,6 +53,11 @@ public class RateLimiterAspect {
 		}
 	}
 
+	/**
+	 * 把用户IP和接口方法名拼接成redis的key
+	 * @param point 切入点
+	 * @return 组合key
+	 */
 	public String getCombineKey(RateLimiter rateLimiter, JoinPoint point) {
 		StringBuffer stringBuffer = new StringBuffer(rateLimiter.key());
 		if (rateLimiter.limitType() == LimitType.IP) {

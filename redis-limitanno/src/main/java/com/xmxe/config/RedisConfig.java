@@ -35,7 +35,10 @@ public class RedisConfig {
 		return redisTemplate;
 	}
 
-	@Bean
+	/**
+	 * 解析lua脚本的bean
+	 */
+	@Bean("limitScript")
 	public DefaultRedisScript<Long> limitScript() {
 		DefaultRedisScript<Long> redisScript = new DefaultRedisScript<>();
 		redisScript.setScriptSource(new ResourceScriptSource(new ClassPathResource("lua/limit.lua")));
