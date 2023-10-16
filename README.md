@@ -15,6 +15,7 @@
 | [redis-accesslimit](https://github.com/xmxe/redis/tree/master/redis-accesslimit) | [Spring Boot + Redis实现API接口防刷限流](https://mp.weixin.qq.com/s/CEddKCkkNeYNTkNoClwuyQ) |
 | [redis-friend](https://github.com/xmxe/redis/tree/master/redis-friend) | [Redis实现微博好友功能微服务（关注，取关，共同关注）](https://mp.weixin.qq.com/s/GQsC6uVDo5Hxr92Zkcf8Qw) |
 | [redis-idempotent](https://github.com/xmxe/redis/tree/master/redis-idempotent) | [一种非侵入式幂等性的Java实现](https://mp.weixin.qq.com/s/eiUOIlNwoTXXsKBOFycB2g) |
+| [redis-delayed_double_deletion](https://github.com/xmxe/redis/tree/master/redis-delayed_double_deletion) | [SpringBoot AOP Redis实现延时双删功能实战](https://blog.csdn.net/jike11231/article/details/126329789) |
 
 ## Redis命令
 
@@ -50,6 +51,7 @@
 - [Redis突然变慢了如何排查并解决？](https://mp.weixin.qq.com/s/6uUig_SXqiG3ZR7lyHZQDw)
 - [如何解决Redis数据倾斜、热点等问题](https://mp.weixin.qq.com/s/m2tprZGffzkxHcmprbLZnw)
 - [这次彻底搞懂Redis，超详细总结！](https://mp.weixin.qq.com/s/M-kj7dk4Ku_upDWzxs-ttw)
+- [Redis热key是什么问题，如何导致的？有什么解决方案？](https://mp.weixin.qq.com/s/7SptSHi5s80RgYfTuDZDhA)
 
 
 ### 为什么是单线程

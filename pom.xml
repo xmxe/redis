@@ -28,6 +28,7 @@
 		<module>redis-accesslimit</module>
 		<module>redis-friend</module>
 		<module>redis-idempotent</module>
+		<module>redis-delayed_double_deletion</module>
 	</modules>
 
 	<dependencies>
