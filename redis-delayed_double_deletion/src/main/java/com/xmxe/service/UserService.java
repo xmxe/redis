@@ -32,9 +32,9 @@ public class UserService {
 	}
 
 	public String update(User user){
-		int i = userMapper.updateById(user);
-		if(i > 0)
-			return "success";
+		// int i = userMapper.updateById(user);
+		// if(i > 0)
+		// 	return "success";
 		return "操作数据库失败";
 	}
 }
